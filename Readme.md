@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент:[Мирослав Стойков](https://htmlacademy.ru/profile/id1459107).
-* Наставник:[Татьяна Симоненкo](https://htmlacademy.ru/profile/id6613).
+* Наставник:[Татьяна Симонен](https://htmlacademy.ru/profile/id6613).
 
 ---
 
