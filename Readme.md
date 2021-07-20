@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
-* Студент: [Неопознанный енот](https://up.htmlacademy.ru/adaptive/23/user/1459107).
-* Наставник: `Неизвестно`.
+* Студент: [Мирослав Стойков](https://htmlacademy.ru/profile/id1459107).
+* Наставник: [Татьяна Симоненко](https://htmlacademy.ru/profile/id6613).
 
 ---
 
