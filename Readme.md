@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
-* Студент: [Мирослав Стойков](https://htmlacademy.ru/profile/id1459107).
-* Наставник: [Татьяна Симоненко](https://htmlacademy.ru/profile/id6613).
+* Студент:[Мирослав Стойков](https://htmlacademy.ru/profile/id1459107).
+* Наставник:[Татьяна Симоненко](https://htmlacademy.ru/profile/id6613).
 
 ---
 
@@ -16,7 +16,7 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`,
 
 ---
 
-### Памятка
+### Памятка 
 
 #### 1. Зарегистрируйтесь на Гитхабе
 
