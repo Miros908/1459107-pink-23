@@ -8,6 +8,10 @@
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
 
 Полезный файл:
+dasas
+dsdadas asdasd
+ asdasdas as das das d
+  
 
 - [Contributing.md](Contributing.md) — руководство по внесению изменений.
 
