@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Pink</title>
+
+
+
+</head>
+
+<body class="page__body">
+    <header class="header">
+        <div class="header__wrapper">
+            <a class="header__logo" href="index.html">
+                <img src="img/logo/pink.svg" width="74" height="23" alt="Логотип сайта Pink">
+            </a>
+            <nav class="main-nav">
+                <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть
+                        меню</span></button>
+                <ul class="main-nav__list">
+                    <li class="main-nav__item"><a href="index.html">Главная</a></li>
+                    <li class="main-nav__item"><a href="#">Фотографии</a></li>
+                    <li class="main-nav__item"><a href="#">Конкурс</a></li>
+                    <li class="main-nav__item"><a href="#">HTML ACADEMY</a></li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <h1 class="visually-hidden">Конкурс от компании Pink</h1>
+        <section class="competition">
+            <h2 class="visually-hidden">Информация о конкурсе</h2>
+            <div class="competition__wrapper">
+                <p class="competition__text">Конкурс на самое<br> безбашенное<br> путешествие с Пинк</p>
+            </div>
+        </section>
+        <section class="client-info">
+            <h2 class="visually-hidden">Информация о участнике</h2>
+            <p class="client-info__text">
+                Поделитесь своей историей и получите<br> шанс выиграть ценный приз — 1000<br> миль на вашу бонусную карту!
+            </p>
+            <form class="client-info__form" action="htmlacademy.echo" method="post">
+                <fieldset class="client-info__name">
+                    <label for="second-name" class="client-info__label">Фамилия</label>
+                    <input class="client-info__input" placeholder="Укажите фамилию *" id="second-name">
+
+                    <label for="name" class="client-info__label">Имя</label>
+                    <input class="client-info__input" placeholder="Введите ваше имя *" id="name">
+
+                    <label for="patronymic" class="client-info__label">Отчество:</label>
+                    <input class="client-info__input" placeholder="Ну и отчество тоже" id="patronymic">
+
+                </fieldset>
+
+                <fieldset class="client-info__progress">
+                    <legend class="client-info__head">Ваши безбашенные<br> достижения в путешествии</legend>
+                    <label class="client-info__label"><input type="checkbox" class="client-info__checkbox">Сделал селфи с акулой</label>
+                    <label class="client-info__label"><input type="checkbox" class="client-info__checkbox">Обгорел на пляже</label>
+                    <label class="client-info__label"><input type="checkbox" class="client-info__checkbox">Видел Чака Норриса</label>
+                    <label class="client-info__label"><input type="checkbox" class="client-info__checkbox">Накупил сувениров</label>
+                    <label class="client-info__label"><input type="checkbox" class="client-info__checkbox">Удержал башню</label>
+                    <label class="client-info__label"><input type="checkbox" class="client-info__checkbox">Разгромил отель</label>
+                </fieldset>
+
+                <fieldset class="client-info__contact">
+                    <label for="number" class="client-info__label">Номер Телефона</label>
+                    <input class="client-info__input" placeholder="Номер, пожалуйста" id="number">
+
+                    <label for="email" class="client-info__label"></label>
+                    <input class="client-info__input" placeholder="Введите почту *" id="email">
+
+
+                </fieldset>
+
+                <fieldset class="client-info__user-app">
+                    <legend class="client-info__head">С каким приложением<br> путешествовали?
+
+                    </legend>
+                    <label class="client-info__label"><input type="radio" class="client-info__radio">Pink для iOS</label>
+                    <label class="client-info__label"><input type="radio" class="client-info__radio">Pink на Android</label>
+                    <label class="client-info__label"><input type="radio" class="client-info__radio">Windows Phone</label>
+                </fieldset>
+
+                <fieldset class="client-info__about">
+                    <legend class="client-info__head">
+                        Опишите свои эмоции
+                    </legend>
+                    <textarea class="client-info__textarea">
+                      Можно прям в красках, не<br>
+                      стесняясь в выражениях
+                    </textarea>
+                </fieldset>
+                <button classs="client-info__button">Отправить форму</button>
+
+            </form>
+            <p class="client-info-text">* — обязательные поля</p>
+        </section>
+    </main>
+    <footer class="footer ">
+        <div class="footer__wrapper ">
+            <a class="footer__logo " href="# "><img src="img/logo/logo-footer.svg " width="145 " height="40 " alt="логотип "></a>
+            <ul class="footer__social-list ">
+                <li class="footer__item">
+                    <a href="# "><img src="img/icon/twitter.svg " width="48 " height="48 " alt="Твитер "></a>
+                </li>
+                <li class="footer__item">
+                    <a href="# "><img src="img/icon/facebook.svg " width="48" height="48 " alt="Фейсбук "></a>
+                </li>
+                <li class="footer__item">
+                    <a href="# "><img src="img/icon/youtube.svg " width="48 " height="48 " alt="Ютуб "></a>
+                </li>
+            </ul>
+            <p class="footer__developer ">Разработано
+            </p>
+            <a class="footer__logo-academy " href="# "><img src="img/logo/academy-logo.svg " width="27 " height="47 " alt="Логотип академии "></a>
+
+        </div>
+    </footer>
+
+    <section class="modal-error">
+        <h2 class="visually-hidden">Ошибка отправки формы</h2>
+        <p class="modal-error__title">Что-то пошло не так!</p>
+        <p class="modal-error__text">Проверьте поля, выделенные красным,<br> скорее всего вы забыли их заполнить</p>
+        <button type="button" class="modal-button">ОК</button>
+    </section>
+
+    <section class="form-sent">
+        <h2 class="visually-hidden">Форма отправлена</h2>
+        <p class="form-sent__title">Ваша заявка отправлена</p>
+        <p class="form-sent__text">Спасибо за ваше участие, ваша заявка<br> уже поступила к нам. В ближайшее<br> время мы рассмотрим ее и<br> оповестим вас.</p>
+        <button type="button" class="modal-button">ОК</button>
+    </section>
+
+
+
+
+</body>
+
+</html>
