@@ -1,1 +1,33 @@
 // Начните писать стили здесь
+.visually-hidden {
+  position   : absolute;
+  width      : 1px;
+  height     : 1px;
+  margin     : -1px;
+  border     : 0;
+  padding    : 0;
+  white-space: nowrap;
+  clip-path  : inset(100%);
+  clip       : rect(0 0 0 0);
+  overflow   : hidden;
+}
+
+@import url("fonts.less");
+@import url("page__body");
+@import url("header.less");
+@import url("app-info.less");
+@import url("advantage.less");
+@import url("comments.less");
+@import url("offer.less");
+@import url("contacts.less");
+@import url("footer.less");
+//form.html
+@import url("competition.less");
+@import url("client-info.less");
+@import url("modal-error.less");
+@import url("form-sent.less");
+
+//catalog.html
+@import url("main-head.less");
+@import url("users-photo.less");
+@import url("users-filter.less");
