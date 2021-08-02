@@ -1,22 +1,20 @@
 .app-info__wrapper{
   width:280px;
   margin:0 auto;
-}
-
-.app-info__slogan {
-  color:#FFFFFF;
-  font-family: Open Sans, Arial, Helvetica, sans-serif;
-  font-weight: 300;
-  font-size: 24px;
-
+  @media(min-width:@tablet-width){
+  width:620px;
+  }
+  @media(min-width:@tablet-width){
+    width:967px;
+    }
 }
 
 .app-info__download {
-  font-family: Open Sans, Arial, Helvetica, sans-serif;
+  font-family: @OpenSans;
   font-weight: 700;
-  color: #FFFFFF;
+  color: @white;
   text-decoration: none;
-  border: 3px solid #FFFFFF;
+  border: 3px solid @white;
   border-radius: 29px;
 }
 
@@ -28,12 +26,31 @@
 
 
 .app-info__maintenance {
-  color: #FFFFFF;
-  font-family: Open Sans, Arial, Helvetica, sans-serif;
-  font-weight: 300;
-  font-size: 14px;
+  color: @white;
+  font-family: @OpenSans;
+  .font-style(300;14px;);
 }
 
 .app-info__background{
- background-color:#1D2631;
+ background-color:@special-black;
+ @media(min-width:@tablet-width){
+ background-color: transparent;
+
+ }
 }
+
+.app-info__slogan{
+  font-family: @OpenSans;
+  .font-style(300;24px;);
+   color:@white;
+   margin-bottom:233px;
+   @media(min-width:@tablet-width){
+
+   }
+}
+
+
+
+
+
+

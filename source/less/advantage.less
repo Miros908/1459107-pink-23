@@ -1,39 +1,120 @@
 .advantage {
-  margin-top: 100px;
-  background-color: #f2f2f2;
+background-color: @special-white;
+
 
 }
 .advantage__wrapper{
   width:280px;
   margin:0 auto;
+  @media(min-width:@tablet-width){
+   width:620px;
+  }
+  @media(min-width:@desktop-width){
+    width:967px;
+   }
+
 }
 .advantage__text {
-  color: #283645;
-  font-family: Open Sans,Arial, sans-serif;
-  font-weight: 300;
-  font-size: 24px;
+  color: @black;
+  font-family: @OpenSans;
+  .font-style(300;24px;);
+  @media(min-width:@tablet-width){
+    .font-style(300;40px;);
+   }
+   @media(min-width:@desktop-width){
+    .font-style(300;50px;);
+    }
+
+
 }
 
 .advantage__list {
   list-style: none;
+  @media(min-width:@desktop-width){
+    display:flex;
+
+
+   }
 }
 
 .advantage__item-head {
-  color: #000000;
-  font-family: Open Sans, Arial, sans-serif;
-  font-weight: 700;
-  font-size: 24px;
+  color: @dark-black;
+  font-family: @OpenSans;
+  .font-style(700;24px;);
+
 }
 
 .advantage__item-text {
-  color: #283645;
-  font-family: Open Sans, Arial, sans-serif;
-  font-weight: 400;
-  font-size: 14px;
+  color: @black;
+  font-family: @OpenSans;
+  .font-style(400;14px;);
 
 
 }
 
 .advantage__background{
- background-color:#ffffff;
+ background-color:@white;
+}
+
+.advantage__flex{
+ display:block;
+ flex-direction: row-reverse;
+ @media(min-width:@tablet-width){
+  display:flex;
+
+ }
+ @media(min-width:@desktop-width){
+  display:grid;
+  grid-template-columns: 920px;
+
+ }
+
+}
+
+.advantage__img{
+ background-image:url(../img/mobile/mobile-advantage.jpg);
+ background-repeat:no-repeat;
+ width:268px;
+ height:547px;
+ @media(min-width:@tablet-width){
+  width:286px;
+  height:547px;
+  background-image:url(../img/mobile/mobile-advantage-tablet.jpg)
+
+
+ }
+ @media(min-width:@desktop-width){
+  width:186px;
+  height:382px;
+  background-image:url(../img/mobile/mobile-advantage-desktop.jpg)
+
+
+ }
+
+
+
+
+
+
+
+}
+.advantage__div-image{
+  @media(min-width:@desktop-width){
+ display:flex;
+ order:-1;
+
+  }
+}
+
+.img-1{
+ background-image:url(../img/mobile/mobile-advantage-1.jpg)
+}
+.img-2{
+  background-image:url(../img/mobile/mobile-advantage-2.jpg)
+}
+.img-1,.img-2{
+ display:none;
+ @media(min-width:@desktop-width){
+ display:block;
+}
 }

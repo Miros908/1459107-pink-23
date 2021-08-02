@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Pink</title>
     <link rel="stylesheet" href="css/style.css">
 
@@ -10,11 +11,11 @@
 
 </head>
 
-<body class="page__body">
+<body class="page-body">
     <header class="header">
-        <div class="header__wrapper">
+        <div class="header__wrapper header__flex">
             <a class="header__logo" href="index.html">
-                <img src="img/logo/pink.svg" width="74" height="23" alt="Логотип сайта Pink">
+                <div></div>
             </a>
             <nav class="main-nav">
                 <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть
@@ -40,18 +41,19 @@
     </header>
     <main class="main">
         <h1 class="visually-hidden">Сайт компании Pink</h1>
-        <section class="app-info">
+        <section class="app-info ">
             <h2 class="visually-hidden">Информация о приложении Pink
             </h2>
-            <div class="app-info__wrapper">
+
+            <div class="app-info__wrapper app-info__flex">
                 <p class="app-info__slogan">
                     Взгляните на жизнь<br> иначе!
                 </p>
-                <img src="img/mobile/mobile.png" width="320" height="286" alt="Фотография экрана приложения">
+
             </div>
             <div class="app-info__background">
                 <div class="app-info__wrapper"><a class="app-info__download" href="#">Скачать
-          приложение</a>
+            приложение</a>
                     <ul class="app-info__social-list">
                         <li class="app-info__item">
                             <a href="#"><img src="img/icon/apple.svg" width="47" height="56" alt="Иконка Apple"></a>
@@ -69,6 +71,7 @@
                     </p>
                 </div>
             </div>
+
         </section>
         <section class="advantage">
 
@@ -84,7 +87,7 @@
                     </p>
                 </div>
             </div>
-            <div class="advantage__wrapper">
+            <div class="advantage__wrapper advantage__flex">
                 <ul class="advantage__list">
                     <li class="advantage__item">
                         <h3 class="advantage__item-head">
@@ -111,72 +114,161 @@
                         </p>
                     </li>
                 </ul>
-                <img src="img/mobile/mobile-advantage.jpg " width="157 " height="320 " alt="Фотография приложения ">
+                <div class="advantage__div-image">
+                    <div class="advantage__img img-1"></div>
+                    <div class="advantage__img img-2"></div>
+                    <div class="advantage__img img-3"></div>
+                </div>
+            </div>
+        </section>
+        <section class="effect effect__wrapper">
+            <div class="effect__timer-photo"></div>
+            <div>
+                <p class="effect__head">Эффект на 24 часа!</p>
+                <p class="effect__slogan">Британские ученые провели исследования<br> и доказали, что положительный эффект<br> от использования приложения длится<br> целые сутки!</p>
+                <a class="effect__link" href="#">Узнать больше об исследовании</a>
             </div>
         </section>
         <section class="comments ">
             <h2 class="visually-hidden ">Комментарии
             </h2>
-            <div class="comments__wrapper ">
+            <div class="comments__wrapper comments__flex ">
                 <cite class="comments__author ">Николай
-          Петров</cite>
+          Петров<br><span>25 лет, водитель трамвая</span></cite>
+
                 <blockquote class="comments__quotes ">
                     «Это приложение перевернуло мой мир<br> и позволило по-новому взглянуть на привычные серые вещи! А еще я<br> познакомился со своей будущей женой<br> в комментариях к выложенной фотографии!»
                 </blockquote>
 
                 <ul class="comments__button-list ">
-                    <li class="comments__button-item">
-                        <button class="comments__button"></button>
+                    <li class="comments__button-item ">
+                        <button class="comments__button "></button>
                     </li>
-                    <li class="comments__button-item">
-                        <button class="comments__button"></button>
+                    <li class="comments__button-item ">
+                        <button class="comments__button "></button>
                     </li>
-                    <li class="comments__button-item">
-                        <button class="comments__button"></button>
+                    <li class="comments__button-item ">
+                        <button class="comments__button "></button>
                     </li>
 
                 </ul>
             </div>
         </section>
-        <section class="offer">
+        <section class="offer ">
             <h2 class="visually-hidden ">Наши предложения
             </h2>
-            <div class="offer__wrapper">
-                <table class="offer__table ">
-                    <tr class="offer__table-row ">
-                        <th class="offer__table-head ">
+            <div class="offer__wrapper ">
+                <div class="offer__table ">
+                    <div class="offer__table-column-head">
+
+                        <div class="offer__table-head  offer-head-1 ">
+
+                            База<br><span>1,99
+            USD</span>
+
+
+                        </div>
+                        <div class="offer__table-head offer-head-2 ">
+
                             Стандарт<br><span>3,99
-              USD</span>
-                        </th>
+          USD</span>
+                        </div>
+                        <div class="offer__table-head offer-head-3 ">
 
-                    </tr>
-                    <tr class="offer__table-row ">
-                        <td class="offer__table-descript ">
-                            Розовый фильтр
-                        </td>
-                    </tr>
-                    <tr class="offer__table-row ">
-                        <td class="offer__table-descript ">
-                            Смайлики
-                        </td>
+                            АНЛИМ<br><span>9,99
+            USD</span>
 
-                    </tr>
-                    <tr class="offer__table-row ">
-                        <td class="offer__table-descript ">
-                            Комментарии
-                        </td>
+                        </div>
+                    </div>
+                    <div class="offer__table-column-flex">
+                        <div class="offer__table-column">
+                            <div class="offer__table-row ">
 
-                    </tr>
-                </table>
+                                Розовый фильтр
+
+                            </div>
+                            <div class="offer__table-row ">
+
+                                Смайлики
+
+
+                            </div>
+                            <div class="offer__table-row ">
+
+                                <span>ДА</span>
+
+
+                            </div>
+                        </div>
+                        <div class="offer__table-column column-2">
+                            <div class="offer__table-row ">
+
+                                <span>НЕТ</span>
+
+                            </div>
+                            <div class="offer__table-row ">
+
+                                <span>ДА</span>
+
+
+                            </div>
+                            <div class="offer__table-row ">
+
+                                <span>ДА</span>
+
+
+                            </div>
+                        </div>
+                        <div class="offer__table-column column-3">
+                            <div class="offer__table-row ">
+
+                                <span>ДА</span>
+
+                            </div>
+                            <div class="offer__table-row ">
+
+                                <span>ДА</span>
+
+
+                            </div>
+                            <div class="offer__table-row ">
+
+                                <span>ДА</span>
+
+
+                            </div>
+                        </div>
+                        <div class="offer__table-column column-4">
+                            <div class="offer__table-row ">
+
+                                <span>ДА</span>
+
+                            </div>
+                            <div class="offer__table-row ">
+
+                                <span>ДА</span>
+
+
+                            </div>
+                            <div class="offer__table-row ">
+
+                                <span>ДА</span>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
                 <ul class="offer__button-list ">
                     <li class="offer__button-item ">
-                        <button class="offer__button"></button>
+                        <button class="offer__button "></button>
                     </li>
                     <li class="offer__button-item ">
-                        <button class="offer__button"></button>
+                        <button class="offer__button "></button>
                     </li>
                     <li class="offer__button-item ">
-                        <button class="offer__button"></button>
+                        <button class="offer__button "></button>
                     </li>
                 </ul>
             </div>
@@ -185,48 +277,52 @@
             <h2 class="visually-hidden ">Контакты
             </h2>
             <div class="contacts__wrapper ">
-                <p class="contacts__info ">
+                <p class="contacts__info contacts__info-desktop ">
                     Остались вопросы?
                     <br> Свяжитесь с нами!
                 </p>
-
-                <p class="contacts__info-head ">
-                    Звоните:
-                </p>
-                <a class="contacts__info" href="tel:+78125556666 ">+7
+                <div class="contacts__flex">
+                    <div>
+                        <p class="contacts__info-head ">
+                            Звоните:
+                        </p>
+                        <a class="contacts__info " href="tel:+78125556666 ">+7
           (812)
           555-66-66</a>
+                    </div>
+                    <div>
+                        <p class="contacts__info-head ">
+                            Пишите:
+                        </p>
+                        <a class="contacts__info " href="mailto:mail@htmlacademy.ru ">mail@htmlacademy.ru</a>
 
-                <p class="contacts__info-head">
-                    Пишите:
-                </p>
-                <a class="contacts__info " href="mailto:mail@htmlacademy.ru ">mail@htmlacademy.ru</a>
-
-
-                <p class="contacts__info-head">
-                    Звоните:
-                </p>
-                <a class="contacts__info">ул.
+                    </div>
+                    <div>
+                        <p class="contacts__info-head ">
+                            Приезжайте в гости:
+                        </p>
+                        <a class="contacts__info ">ул.
           Большая<br>
           Конюшенная,
           19/8</a>
+                    </div>
+                </div>
+                <a class="contacts__map "></a>
 
-
-                <a class="contacts__map "><img src="img/map/map.png " width="320 " height="200 " alt="Карта "></a>
             </div>
         </section>
     </main>
     <footer class="footer ">
-        <div class="footer__wrapper ">
+        <div class="footer__wrapper footer__flex">
             <a class="footer__logo " href="# "><img src="img/logo/logo-footer.svg " width="145 " height="40 " alt="логотип "></a>
             <ul class="footer__social-list ">
-                <li class="footer__item">
+                <li class="footer__item ">
                     <a href="# "><img src="img/icon/twitter.svg " width="48 " height="48 " alt="Твитер "></a>
                 </li>
-                <li class="footer__item">
-                    <a href="# "><img src="img/icon/facebook.svg " width="48" height="48 " alt="Фейсбук "></a>
+                <li class="footer__item ">
+                    <a href="# "><img src="img/icon/facebook.svg " width="48 " height="48 " alt="Фейсбук "></a>
                 </li>
-                <li class="footer__item">
+                <li class="footer__item ">
                     <a href="# "><img src="img/icon/youtube.svg " width="48 " height="48 " alt="Ютуб "></a>
                 </li>
             </ul>

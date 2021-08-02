@@ -1,35 +1,68 @@
 .offer {
-  background-color: #F2F2F2;
+  background-color: @special-white;
 }
 
 .offer__table-head {
-  color: #FFFFFF;
-  font-family: Open Sans, Arial, Helvetica, sans-serif;
+  color: @white;
+  font-family: @OpenSans;
   font-weight: 700;
   font-size: 16px;
-  background-color: #283645;
+  background-color:@black;
+  width:152px;
+  height:75px;
 
   span {
-    font-family: Open Sans, Arial, Helvetica, sans-serif;
-    font-weight: 300;
-    font-size  : 18px;
+    font-family: @OpenSans;
+    .font-style(300;18px;);
 
   }
 }
 
 .offer__table-row {
-  background-color: #FFFFFF;
+  background-color: @white;
+  border:2px solid @grey;
+  width:153px;
+  height:45px;
 }
 
 .offer__table-descript {
-  color: #283645;
-  font-family: Open Sans, Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-size  : 14px;
+  color: @black;
+  font-family: @OpenSans;
+  .font-style(400;14px;);
 
 }
 
 .offer__wrapper{
   width:280px;
   margin:0 auto;
+  @media(min-width:@tablet-width){
+    width:620px;
+   }
+   @media(min-width:@desktop-width){
+     width:967px;
+    }
 }
+
+.offer__table-column-flex{
+ display:flex;
+}
+
+.column-2,.column-3,.column-4{
+display:none;
+@media(min-width:@tablet-width){
+ display:block;
+}
+}
+
+.offer__table-column-head{
+ display:flex;
+
+}
+
+.offer-head-1,.offer-head-3{
+ display:none;
+ @media(min-width:@tablet-width){
+  display:block;
+ }
+}
+
