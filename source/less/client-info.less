@@ -1,6 +1,6 @@
 
 .client-info{
-  background-color:#FFFFFF;
+  background-color:@white;
 }
 .client-info__wrapper{
   width:280px;
@@ -9,10 +9,9 @@
 
 
 .client-info__text {
-  color: #283645;
-  font-family: Open Sans, Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-size: 14px;
+  color: @black;
+  font-family: @OpenSans;
+  .font-style(400;14px;);
   line-height: 30px;
 }
 
@@ -36,63 +35,57 @@
 
 .client-info__progress,
 .client-info__user-app {
-  background-color: #F2F2F2;
+  background-color:@special-white;
 }
 
 .client-info__label-name {
-  color: #D22856;
-  font-family: Open Sans, Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-size: 14px;
+  color: @red;
+  font-family: @OpenSans;
+  .font-style(400;14px;);
 
 }
 
 .client-info__label {
-  color: #283645;
-  font-family: Open Sans, Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-size: 18px;
+  color: @black;
+  font-family: @OpenSans;
+  .font-style(400;18px;);
 
 }
 
 .client-info__input {
   border: none;
-  font-family: Open Sans, Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-size: 18px;
+  font-family: @OpenSans;
+  .font-style(400;18px;);
 }
 
 ::-webkit-input-placeholder {
-  color:#283645;
+  color:@black;
 }
 
 .client-info__head,
 .client-info__contact label {
-  color: #D22856;
-  font-family: Open Sans, Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-size: 14px;
+  color: @red;
+  font-family: @OpenSans;
+  .font-style(400;14px;);
 }
 
 .client-info__textarea {
   border: none;
-  border-top: 2px solid #E5E5E5;
-  border-bottom: 2px solid #E5E5E5;
+  border-top: 2px solid @grey;
+  border-bottom: 2px solid @grey;
   resize: none;
   overflow: hidden;
   padding-bottom: 22px;
-  font-family: Open Sans, Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-size: 18px;
+  font-family: @OpenSans;
+  .font-style(400;18px;);
   width: 276px;
 }
 
 .client-info__button {
-  border: 2px solid #2AAB6D;
+  border: 2px solid @green;
   border-radius: 1px;
-  background-color: #2AAB6D;
-  font-family: Open Sans, Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  color: #FFFFFF;
+  background-color: @green;
+  font-family: @OpenSans;
+  .font-style(700;18px;);
+  color: @white;
 }

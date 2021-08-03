@@ -1,19 +1,44 @@
 .comments__author {
-  color:#000000;
-  font-family: Open Sans,Arial, Helvetica, sans-serif;
-  font-weight:700;
-  font-size:24px;
+  color:@dark-black;
+  font-family: @OpenSans;
+  .font-style(700;24px;);
   font-style: normal;
+
+}
+
+.comments__author span{
+  color:@dark-black;
+  font-family: @OpenSans;
+  .font-style(400;14px;);
+  font-style: normal;
+  display:none;
+  @media(min-width:@tablet-width){
+  display:block;
+  }
+
 }
 
 .comments__quotes{
-  color:#283645;
-  font-family: Open Sans,Arial, Helvetica, sans-serif;
-  font-weight:400;
-  font-size:14px;
+  color:@black;
+  font-family: @OpenSans;
+  .font-style(400;14px;);
+  order:-1;
 }
 
 .comments__wrapper{
   width:280px;
   margin:0 auto;
+  @media(min-width:@tablet-width){
+    width:620px;
+   }
+   @media(min-width:@desktop-width){
+     width:967px;
+    }
+}
+
+.comments__flex{
+ @media(min-width:@tablet-width){
+  display:flex;
+  flex-direction:column;
+ }
 }

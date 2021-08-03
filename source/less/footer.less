@@ -1,11 +1,27 @@
 .footer__developer{
-  font-family: Open Sans,Arial, Helvetica, sans-serif;
-  font-weight:400;
-  font-size:14px;
-  color:#283645;
+  font-family: @OpenSans;
+  .font-style(400;14px;);
+  color:@dark-black;
 }
 
 .footer__wrapper{
   width: 280px;
   margin: 0 auto;
+  @media(min-width:@tablet-width){
+   width:620px;
+  }
+  @media(min-width:@desktop-width){
+    width:967px;
+   }
+}
+
+.footer__flex{
+ @media(min-width:@tablet-width){
+  display:flex;
+  justify-content:space-between;
+ }
+}
+.footer__social-list{
+ display:flex;
+ list-style: none;
 }

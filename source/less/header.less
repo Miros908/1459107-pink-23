@@ -2,22 +2,50 @@
   background-color: rgba(0, 0, 0, 0.3);
   overflow-x:hidden;
 
-
 }
 
-.main-nav__item a {
-  text-decoration: none;
-  color: #FFFFFF;
-  font-family: Open Sans, Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  font-size: 18px;
+.header__flex{
+  @media(min-width:@desktop-width){
+    display:flex;
+    justify-content: space-between;
+    }
 }
+
+
+
 
 .header__wrapper{
   width:280px;
   margin:0 auto;
+  @media(min-width:@tablet-width){
+  width:620px;
+  margin:0 auto;
+  }
+  @media(min-width:@desktop-width){
+    width:967px;
+    margin:0 auto;
+    }
 }
 
-.main-nav{
- display:none;
+
+
+.header__logo div{
+  width:74px;
+  height:23px;
+ background-image: url(../img/logo/pink.svg);
+ background-repeat: no-repeat;
+ @media(min-width:@tablet-width){
+  background-image: url(../img/logo/pink-tablet.svg);
+  width:145px;
+  height:40px;
+
+ }
+ @media(min-width:@tablet-width){
+  background-image: url(../img/logo/pink-desktop.svg);
+  width:147px;
+  height:40px;
+
+ }
 }
+
+
