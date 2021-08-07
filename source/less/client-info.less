@@ -5,8 +5,23 @@
 .client-info__wrapper{
   width:280px;
   margin:0 auto;
+  @media(min-width:@tablet-width){
+   width:620px;
   }
-
+  @media(min-width:@desktop-width){
+    width:967px;
+   }
+  }
+.client-info__wrapper-3{
+ width:280px;
+ margin:0 auto;
+ @media(min-width:@tablet-width){
+  width:620px;
+ }
+ @media(min-width:@desktop-width){
+  width:400px;
+ }
+}
 
 .client-info__text {
   color: @black;
@@ -23,10 +38,7 @@
   border: none;
 }
 
-.client-info__wrapper {
-  width: 280px;
-  margin: 0 auto;
-}
+
 
 .client-info__form fieldset {
   display: flex;
@@ -88,4 +100,33 @@
   font-family: @OpenSans;
   .font-style(700;18px;);
   color: @white;
+}
+
+
+.client-info__flex{
+ display:flex;
+ flex-direction:column;
+}
+
+.client-info__flex-2{
+ display:flex;
+flex-direction:column;
+@media(min-width:@desktop-width){
+
+ flex-direction:row;
+  flex-wrap:wrap;
+  width:967px;
+  margin:0 auto;
+
+}
+
+
+}
+
+.client-info__user-app{
+  order:4;
+ @media(min-width:@tablet-width){
+ order:0;
+ }
+
 }
