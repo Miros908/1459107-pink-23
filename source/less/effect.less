@@ -1,8 +1,12 @@
 .effect__timer-photo{
  background-image:url(../img/icon/timer.svg);
  background-repeat:no-repeat;
- width:238px;
- height:276px;
+ width:544px;
+ height:294px;
+ @media(min-width:@desktop-width){
+  margin-right:70px;
+  margin-left:70px;
+ }
 }
 
 .effect__head{
@@ -13,6 +17,10 @@ font-family:@OpenSans;
 .effect__slogan{
   font-family:@OpenSans;
   .font-style(400;14px);
+  @media(min-width:@desktop-width){
+   font-size:18px;
+   width:502px;
+   }
 
 }
 
@@ -20,18 +28,29 @@ font-family:@OpenSans;
  color:@red;
  font-family:@OpenSans;
   .font-style(400;14px);
+  @media(min-width:@desktop-width){
+ font-size:18px;
+   }
+
 }
 
 .effect{
  display:none;
+ background-color:@white;
  @media(min-width:@tablet-width){
-   display:flex;
- }
+  display:block;
+}
+
+
+
 }
 
 .effect__wrapper{
  width:660px;
  margin:0 auto;
+ @media(min-width:@tablet-width){
+  display:flex;
+}
  @media(min-width:@desktop-width){
   width:967px;
  }
