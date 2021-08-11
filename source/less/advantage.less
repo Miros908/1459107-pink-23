@@ -18,9 +18,12 @@ background-color: @special-white;
   color: @black;
   font-family: @OpenSans;
   .font-style(300;24px;);
+  text-align:center;
   @media(min-width:@tablet-width){
     .font-style(300;40px;);
-   }
+    margin:0;
+
+  }
    @media(min-width:@desktop-width){
     .font-style(300;50px;);
     }
@@ -28,10 +31,29 @@ background-color: @special-white;
 
 }
 
+.advantage__text-2{
+ @media(min-width:@tablet-width){
+  width:350px;
+  margin-left:122px;
+  margin-top:1px;
+ }
+ @media(min-width:@desktop-width){
+  width:460px;
+  margin-left:227px;
+  margin-top:1px;
+ }
+}
+
 .advantage__list {
   list-style: none;
+  padding:0;
+  margin:0;
+  @media(min-width:@tablet-width){
+   margin-left:30px;
+  }
   @media(min-width:@desktop-width){
     display:flex;
+    margin-left:112px;
 
 
    }
@@ -40,16 +62,40 @@ background-color: @special-white;
 .advantage__item-head {
   color: @dark-black;
   font-family: @OpenSans;
-  .font-style(700;24px;);
+  .font-style(700;18px;);
+text-align:center;
+@media(min-width:@tablet-width){
+text-align:start;
+}
+@media(min-width:@desktop-width){
+  .font-style(700;30px;);
+  width:231px;
+  text-align:center;
+  }
 
 }
+
 
 .advantage__item-text {
   color: @black;
   font-family: @OpenSans;
   .font-style(400;14px;);
+  text-align:center;
+  @media(min-width:@tablet-width){
+    text-align:start;
+  width:311px;}
+
+  @media(min-width:@desktop-width){
+  width:166px;
+  text-align:center;
+  margin-left:39px;
+  }
 
 
+}
+
+.advantage__item{
+ margin-right:21px;
 }
 
 .advantage__background{
@@ -76,17 +122,21 @@ background-color: @special-white;
  background-repeat:no-repeat;
  width:268px;
  height:547px;
+ background-position:center;
  @media(min-width:@tablet-width){
   width:286px;
   height:547px;
-  background-image:url(../img/mobile/mobile-advantage-tablet.jpg)
+  background-image:url(../img/mobile/mobile-advantage-tablet.jpg);
+
 
 
  }
+
  @media(min-width:@desktop-width){
   width:186px;
   height:382px;
-  background-image:url(../img/mobile/mobile-advantage-desktop.jpg)
+  background-image:url(../img/mobile/mobile-advantage-desktop.jpg);
+  margin-right:60px;
 
 
  }
@@ -99,20 +149,27 @@ background-color: @special-white;
 
 }
 .advantage__div-image{
+display:flex;
+justify-content:center;
   @media(min-width:@desktop-width){
  display:flex;
  order:-1;
+ margin-left:96px;
+
 
   }
 }
 
-.img-1{
- background-image:url(../img/mobile/mobile-advantage-1.jpg)
+
+
+.adavantage__img-1{
+ background-image:url(../img/mobile/mobile-advantage-1.jpg);
+
 }
-.img-2{
+.adavantage__img-2{
   background-image:url(../img/mobile/mobile-advantage-2.jpg)
 }
-.img-1,.img-2{
+.adavantage__img-1,.adavantage__img-2{
  display:none;
  @media(min-width:@desktop-width){
  display:block;

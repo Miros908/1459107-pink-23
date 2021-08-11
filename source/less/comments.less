@@ -1,8 +1,12 @@
 .comments__author {
   color:@dark-black;
   font-family: @OpenSans;
-  .font-style(700;24px;);
+  .font-style(700;18px;);
+  text-align: center;
   font-style: normal;
+  @media(min-width:@tablet-width){
+    font-size:24px;
+   }
 
 }
 
@@ -15,6 +19,10 @@
   @media(min-width:@tablet-width){
   display:block;
   }
+  @media(min-width:@desktop-width){
+    font-size:18px;
+   }
+
 
 }
 
@@ -23,6 +31,14 @@
   font-family: @OpenSans;
   .font-style(400;14px;);
   order:-1;
+  line-height: 30px;
+  padding:0;
+  margin:0;
+  @media(min-width:@desktop-width){
+    width:698px;
+    margin-left:129px;
+    font-size:18px;
+   }
 }
 
 .comments__wrapper{
@@ -37,8 +53,104 @@
 }
 
 .comments__flex{
+  text-align:center;
+
+
  @media(min-width:@tablet-width){
   display:flex;
   flex-direction:column;
  }
+ @media(min-width:@desktop-width){
+  position:relative;
+
+ }
 }
+.comments{
+ background-color:@white;
+ margin-top:-1px;
+ padding-bottom:21px;
+ @media(min-width:@desktop-width){
+
+  padding-top:159px;
+
+
+}
+
+
+}
+.comments__button-list{
+ list-style: none;
+ display:flex;
+ margin-left:66px;
+ @media(min-width:@tablet-width){
+  margin-left:233px;
+ }
+
+ @media(min-width:@desktop-width){
+  margin-left:409px;}
+  padding-top:1px;
+
+
+}
+.comments__button-1,.comments__button-2,.comments__button-3{
+ border:none;
+ background-color:@black;
+padding:0;
+width:6px;
+height:6px;
+border-radius: 50%;
+margin-right:19px;
+opacity:30%;
+}
+
+.comments__button--active{
+  width:11px;
+  height:11px;
+  background-color:@white;
+  border: 3px solid @black;
+  opacity:100%;
+  margin-right:14px
+}
+
+.comments__span{
+  display:none;
+  @media(min-width:@desktop-width){
+ display:block;
+ background-image:url(../img/icon/quotes.svg);
+ background-repeat:no-repeat;
+ width:79px;
+ height:70px;
+ position:absolute;
+ top:-103px;
+ left:420px;
+  }
+}
+
+.comments__button-next{
+  display:none;
+  @media(min-width:@desktop-width){
+  display:block;
+ border:none;
+ background-color:inherit;
+ width:22px;
+ height:41px;
+ background-image:url(../img/icon/next.svg);
+ background-repeat:no-repeat;
+ position:absolute;
+ top:1px;
+ right:1px;
+  }
+}
+.comments__button-back{
+  display:none;
+  @media(min-width:@desktop-width){
+  display:block;
+  border:none;
+  background-color:inherit;
+  width:22px;
+  height:41px;
+  background-image:url(../img/icon/back.svg);
+  background-repeat:no-repeat;
+  position:absolute;
+  }
+ }

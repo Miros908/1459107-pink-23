@@ -10,6 +10,19 @@
 
 }
 
+.contacts{
+ background-color: @white;
+ text-align:center;
+ margin-top:-25px;
+ @media(min-width:@tablet-width){
+ margin-top:-41px;
+ }
+ @media(min-width:@desktop-width){
+  margin-top:-51px;
+  }
+
+}
+
 .contacts__info-head {
   font-family: @OpenSans;
   .font-style(700;18px;);
@@ -53,3 +66,13 @@
 
 }
 
+.contacts__map{
+  display:block;
+  width:320px;
+  height:292px;
+  background-image:url(../img/map/map-mobile.png);
+  background-repeat: no-repeat;
+  background-position:center;
+  margin-top:-63px;
+  margin:0 auto;
+}
