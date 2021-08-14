@@ -1,10 +1,12 @@
 .users-photo{
  background-color:white;
+ padding-bottom:1px;
 }
 
 .users-photo__wrapper{
   width:280px;
   margin:0 auto;
+  padding:0 20px;
   @media(min-width:@tablet-width){
     width:620px;
     }
@@ -23,18 +25,39 @@
 
   color:@black;
   .font-style(700;14px;);
+ font-style:normal;
+ padding-left:20px;
+
 
 }
 
 .users-photo__time{
   .font-style(300;12px;);
 font-style:normal;
+text-transform:uppercase;
+padding-left:20px;
+
 }
 
 .users-photo__blockquote{
   color: @black;
   font-family: @OpenSans;
   .font-style(400;14px;);
+  width:263px;
+  margin:0;
+  line-height:24px;
+  margin-bottom:25px;
+  margin-top:14px;
+  padding-left:20px;
+  @media(min-width:@tablet-width){
+
+   width:86%;
+  }
+  @media(min-width:@desktop-width){
+
+    width:100%;
+   }
+
 }
 .users-photo__button{
  border:none;
@@ -43,6 +66,10 @@ font-style:normal;
  .font-style(400;12px;);
   background-color:inherit;
   text-transform:uppercase;
+  padding:0;
+  padding-left:20px;
+
+
 }
 
 
@@ -60,6 +87,64 @@ font-style:normal;
 }
 .users-photo__item{
  width:280px;
+ background-color: @special-white;
+ margin-bottom:20px;
+ display:flex;
+ flex-direction:column;
+align-items: start;
+justify-content: space-between;
+height:300px;
+
+
+
+}
+
+.users-photo__list li{
+ margin-right:20px;
+}
+
+.users-photo__list li:nth-of-type(2n+1){
+  @media(min-width:@tablet-width){
+   margin-right:0;
+  }
+ }
+ .users-photo__list li:nth-of-type(2n+1){
+  @media(min-width:@desktop-width){
+   margin-right:20px;
+  }
+ }
+
+ .users-photo__list li:nth-of-type(3n+1){
+  @media(min-width:@desktop-width){
+   margin-right:0;
+  }
+ }
+
+
+
+
+
+
+
+
+.users-photo__item-1{
+  width:280px;
+  background-color: @special-white;
+  margin-bottom:20px;
+  display:flex;
+  flex-direction:column;
+  align-items: start;
+  justify-content: space-between;
+  height:180px;
+  @media(min-width:@tablet-width){
+   width:620px;
+   height:121px;
+  }
+  @media(min-width:@desktop-width){
+    width:940px;
+    height:96px;
+   }
+
 }
 .users-photo__item-head{
  width:320px;
@@ -70,6 +155,34 @@ font-style:normal;
     width:1200px;
     }
 
+}
+
+.users-photo__img{
+ width:100%;
+}
+
+.users-photo__text{
+ text-align:center;
+ line-height: 30px;
+ @media(min-width:@tablet-width){
+  font-size:18px;
+  width:467px;
+  margin-left:78px;
+  padding-top:100px;
+  padding-bottom:85px;
+ }
+ @media(min-width:@desktop-width){
+margin-left:197px;
+width:600px;
+}
+}
+
+.users-photo__flex-1{
+  @media(min-width:@tablet-width){
+  width:100%;
+ display:flex;
+justify-content: space-between;
+  }
 }
 
 
