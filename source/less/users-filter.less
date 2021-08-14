@@ -8,3 +8,159 @@
       width:967px;
       }
 }
+
+.users-filter{
+
+ padding-bottom:35px;
+ margin-top:-18px;
+ margin-bottom:-35px;
+}
+
+.users-filter__range{
+ width:240px;
+ height:2px;
+ background-color:@black;
+ position:relative;
+ margin-top:31px;
+  margin-bottom:71px;
+
+ @media(min-width:@tablet-width){
+  width:202px;
+  margin-top:31px;
+  margin-bottom:71px;
+ }
+
+}
+.users-filter__range-1{
+  width:240px;
+  height:2px;
+  background-color:@black;
+  position:relative;
+display:none;
+  @media(min-width:@tablet-width){
+    width:202px;
+    margin-top:31px;
+  margin-bottom:71px;
+  display:block;
+   }
+
+ }
+.users-filter__toggle{
+
+ width:12px;
+ height:12px;
+ border: 2px solid @red;
+ border-radius:50%;
+ background-color: @white;
+ position:absolute;
+ top:-6px;
+}
+
+ .users-filter__label svg{
+  fill:@black;
+  opacity:30%;
+  @media(min-width:@tablet-width){
+   width:22px;
+   height:22px;
+   fill:@red;
+   opacity:100%;
+
+  }
+ }
+
+ .users-filter__label{
+  @media(min-width:@tablet-width){
+    margin-left:25px;
+    margin-right:60px;
+    margin-bottom:52px;
+  }
+ }
+
+ .users-filter__label:hover svg{
+  opacity:50%;
+ }
+  .users-filter__checkbox:checked+label svg{
+   fill:@red;
+   opacity:100%;
+  }
+
+  .users-filter__form{
+   display:flex;
+   align-items:center;
+   flex-direction:column;
+  }
+.users-filter__button{
+ border:3px solid @red;
+ border-radius:30px;
+ color:@red;
+ background-color:inherit;
+ font-family: @OpenSans;
+ .font-style(700;18px;);
+line-height: 18px;
+width:279px;
+padding:13px 0px;
+margin-bottom:5px;
+@media(min-width:@tablet-width){
+ width:260px;
+}
+}
+.users-filter__buttons{
+ @media(min-width:@tablet-width){
+   margin-left:46px;
+  margin-top:125px;
+ }
+ @media(min-width:@desktop-width){
+  display:flex;
+ }
+}
+
+
+
+.users-filter__flex{
+ @media(min-width:@tablet-width){
+  display:flex;
+ }
+}
+.users-filter__flex-2{
+  display:flex;
+  align-items:center;
+  justify-content: space-around;
+  @media(min-width:@tablet-width){
+
+   flex-direction: column;
+  }
+ }
+.users-filter__flex-4{
+  @media(min-width:@tablet-width){
+    display:flex;
+    align-items:center;
+
+   }
+
+}
+.users-filter__flex-3{
+ @media(min-width:@tablet-width){
+  margin-top:-13px;
+ }
+}
+
+.users-filter__text{
+  background-color: @white;
+  text-align:center;
+  line-height: 30px;
+  width:100%;
+  margin:0;
+
+
+ @media(min-width:@tablet-width){
+  font-size:18px;
+  width:100%;
+
+
+ }
+}
+
+.users-filter__background{
+ background-color: @grey;
+
+}
