@@ -7,21 +7,21 @@
   width:280px;
   margin:0 auto;
   @media(min-width:@tablet-width){
-   width:620px;
+    width:620px;
   }
   @media(min-width:@desktop-width){
     width:967px;
-   }
+    }
   }
-.client-info__wrapper-3{
- width:280px;
- margin:0 auto;
- @media(min-width:@tablet-width){
+.client-info__wrap{
+  width:280px;
+  margin:0 auto;
+  @media(min-width:@tablet-width){
   width:620px;
- }
- @media(min-width:@desktop-width){
+  }
+  @media(min-width:@desktop-width){
   width:400px;
- }
+  }
 }
 
 .client-info__text {
@@ -33,24 +33,17 @@
   @media(min-width:@tablet-width){
     width:404px;
     margin-left:96px;
-   }
+    }
 
-   @media(min-width:@desktop-width){
+    @media(min-width:@desktop-width){
     width:597px;
     margin-left:166px;
 
-   }
+    }
 }
 
-.client-info__text-2 {
 
-  color: @black;
-  font-family: @OpenSans;
-  .font-style(400;14px;);
-  line-height: 30px;
-  text-align:center;
-  text-transform:uppercase;
-}
+
 
 .client-info__name,
 .client-info__progress,
@@ -59,19 +52,30 @@
 .client-info__about {
   border: none;
 }
-.client-info__desktop-1{
-
+.client-info__text--hidden{
+  color: @black;
+  font-family: @OpenSans;
+  .font-style(400;14px;);
+  line-height: 30px;
+  text-align:center;
+  text-transform:uppercase;
   @media(min-width:@desktop-width){
-   display:none;
+    display:none;
   }
   }
 
 
 
-.client-info__desktop{
+.client-info__text--visible{
 display:none;
+  color: @black;
+  font-family: @OpenSans;
+  .font-style(400;14px;);
+  line-height: 30px;
+  text-align:center;
+  text-transform:uppercase;
 @media(min-width:@desktop-width){
- display:block;
+  display:block;
 }
 }
 
@@ -85,7 +89,7 @@ display:none;
 .client-info__user-app {
   background-color:@special-white;
   @media(min-width:@desktop-width){
-   background-color:@white;
+    background-color:@white;
   }
 }
 
@@ -117,22 +121,22 @@ padding:14px 0px;
 @media(min-width:@tablet-width){
   border: 2px solid @grey;
 
- }
+  }
 
 }
 
-.client-info__input-1{
+.client-info__input-position{
   margin-top:10px;
   margin-bottom:20px;
   @media(min-width:@tablet-width){
-   padding-left:14px;
-   padding-right:296px;
-   margin-left:31px;
+    padding-left:14px;
+    padding-right:296px;
+    margin-left:31px;
   }
   @media(min-width:@desktop-width){
     padding-left:14px;
-   padding-right:50px;
-   margin-left:31px;
+    padding-right:50px;
+    margin-left:31px;
   }
 }
 
@@ -140,19 +144,19 @@ padding:14px 0px;
   @media(min-width:@tablet-width){
     padding-left:q6px;
     padding-right:333px;
-   }
-   @media(min-width:@desktop-width){
+    }
+    @media(min-width:@desktop-width){
     padding-left:14px;
-   padding-right:50px;
-   margin-left:31px;
+    padding-right:50px;
+    margin-left:31px;
   }
 
 }
-.client-info__input-3{
- margin-bottom:17px;
- @media(min-width:@desktop-width){
+.client-info__input-wrap{
+  margin-bottom:17px;
+  @media(min-width:@desktop-width){
   width:340px;
- }
+  }
 }
 
 ::-webkit-input-placeholder {
@@ -190,15 +194,15 @@ padding:14px 0px;
   border-radius: 1px;
   width:496px;
   margin-left:63px;
- white-space: nowrap;
- text-align:center;
- margin-top:15px;
- margin-bottom:47px;
+  white-space: nowrap;
+  text-align:center;
+  margin-top:15px;
+  margin-bottom:47px;
 }
 @media(min-width:@desktop-width){
- width:815px;
- text-align:start;
- padding-left:20px;
+  width:815px;
+  text-align:start;
+  padding-left:20px;
 }
 
 }
@@ -217,20 +221,20 @@ padding:14px 0px;
 }
 
 
-.client-info__flex{
- display:flex;
- flex-direction:column;
+.client-info__cont{
+  display:flex;
+  flex-direction:column;
 
 }
 
 
 
-.client-info__flex-2{
- display:flex;
+.client-info__container{
+  display:flex;
 flex-direction:column;
 @media(min-width:@desktop-width){
 
- flex-direction:row;
+  flex-direction:row;
   flex-wrap:wrap;
   width:967px;
   margin:0 auto;
@@ -242,34 +246,34 @@ flex-direction:column;
 
 .client-info__user-app{
   order:4;
- @media(min-width:@tablet-width){
- order:0;
- }
+  @media(min-width:@tablet-width){
+  order:0;
+  }
 
 }
 
-.client-info__label-2{
- position:relative;
- margin-bottom:44px;
- margin-left:68px;
- width:231px;
+.client-info__label-position{
+  position:relative;
+  margin-bottom:44px;
+  margin-left:68px;
+  width:231px;
 }
 
 
 
-.client-info__label-2::before{
- content:"";
+.client-info__label-position::before{
+  content:"";
  display:block;
- width:33px;
- height:33px;
- border:2px solid @grey;
- border-radius: 1px;
- position:absolute;
- top:-4px;
- left:-71px;
+  width:33px;
+  height:33px;
+  border:2px solid @grey;
+  border-radius: 1px;
+  position:absolute;
+  top:-4px;
+  left:-71px;
 
 }
-.client-info__label-2::after{
+.client-info__label-position::after{
   content:"";
   display:block;
   width:22px;
@@ -278,16 +282,16 @@ flex-direction:column;
   background-repeat:no-repeat;
   position:absolute;
   top:6px;
- left:-63px;
- display:none;
+  left:-63px;
+  display:none;
 
- }
+  }
 
- .client-info__checkbox:checked+.client-info__label-2::after{
+  .client-info__checkbox:checked+.client-info__label-2::after{
   display:block;
- }
+  }
 
- .client-info__label-3{
+  .client-info__label-wrap{
   margin-bottom:18px;
   text-align:start;
   color: @red;
@@ -296,15 +300,15 @@ flex-direction:column;
 
   line-height:18px;
   text-transform:uppercase;
- }
+  }
 
 
- .client-info__label-user{
+  .client-info__label-user{
   position:relative;
   margin-left:70px;
   margin-bottom:40px;
- }
- .client-info__label-user::before{
+  }
+  .client-info__label-user::before{
   content:"";
   display:block;
   width:35px;
@@ -318,9 +322,9 @@ flex-direction:column;
 
 
 
- }
+  }
 
- .client-info__label-user::after{
+  .client-info__label-user::after{
   content:"";
   display:block;
   width:15px;
@@ -332,109 +336,109 @@ flex-direction:column;
   left:-58px;
   display:none;
 
- }
+  }
 .client-info__radio:checked+.client-info__label-user::after{
- display:block;
+  display:block;
 }
 
 
-.client-info__span-2{
- color:@red;
+.client-info__star{
+  color:@red;
 }
 
 .client-info__about{
- @media(min-width:@tablet-width){
+  @media(min-width:@tablet-width){
   border: 2px solid @grey;
- border-radius: 1px;
- padding:0;
+  border-radius: 1px;
+  padding:0;
 
 
- }
+  }
 }
 
 
 .client-info__div{
- display:flex;
- flex-direction: column;
- @media(min-width:@tablet-width){
+  display:flex;
+  flex-direction: column;
+  @media(min-width:@tablet-width){
   flex-direction: row;
   align-items:center;
- }
+  }
 }
 
 
 .client-info__user-app{
   @media(min-width:@desktop-width){
- border:2px solid @grey;
+  border:2px solid @grey;
 margin-left:70px;
- }
- }
+  }
+  }
 
- .client-info__flex-progress{
+  .client-info__cont-progress{
   @media(min-width:@desktop-width){
-   flex-direction:row;
-   flex-wrap: wrap;
+    flex-direction:row;
+    flex-wrap: wrap;
   justify-content: space-around;
   }
- }
+  }
 
 
- .client-info__contact{
-   @media(min-width:@desktop-width){
+  .client-info__contact{
+    @media(min-width:@desktop-width){
   order:-1;
   margin-top:75px;
   margin-bottom:47px;
-   }
- }
- .client-info__name{
+    }
+  }
+  .client-info__name{
   @media(min-width:@desktop-width){
-   order:-2;
+    order:-2;
   }
   }
   .client-info__user-app{
     @media(min-width:@desktop-width){
-   order:-2;
+    order:-2;
     }
   }
   .client-info__about{
     @media(min-width:@desktop-width){
-   order:0;
+    order:0;
     }
   }
   .client-info__progress{
     @media(min-width:@desktop-width){
-   order:0;
+    order:0;
     }
   }
 
-  .client-info__flex-contact{
+  .client-info__wrap-contact{
   @media(min-width:@desktop-width){
-   flex-direction:row;
-   align-items:center;
-   justify-content: space-around;
+    flex-direction:row;
+    align-items:center;
+    justify-content: space-around;
 
   }
 
   .client-info__contact-div{
 
-   display:flex;
-   flex-direction:column;
-   @media(min-width:@tablet-width){
+    display:flex;
+    flex-direction:column;
+    @media(min-width:@tablet-width){
     flex-direction:column-reverse;
-   }
+    }
   }
 
   }
 
   .client-info__head-contact{
-   display:none;
-   @media(min-width:@desktop-width){
+    display:none;
+    @media(min-width:@desktop-width){
     display:block;
-   }
+    }
   }
 
 
-  .client-info__flex-button{
+  .client-info__wrap-button{
 
     @media(min-width:@tablet-width) {
       display:flex;

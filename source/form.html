@@ -11,7 +11,7 @@
 
 </head>
 
-<body class="page-body-2">
+<body class="page-body-form">
     <header class="header">
         <div class="header__wrapper ">
 
@@ -31,10 +31,10 @@
                         <a href="index.html">Главная</a>
                     </li>
                     <li class="main-nav__item">
-                        <a href="#">Фотографии</a>
+                        <a href="catalog.html">Фотографии</a>
                     </li>
                     <li class="main-nav__item">
-                        <a href="#">Конкурс</a>
+                        <a href="form.html">Конкурс</a>
                     </li>
                     <li class="main-nav__item">
                         <a href="#">Html
@@ -61,22 +61,22 @@
                 </p>
             </div>
             <form class="client-info__form " action="htmlacademy.echo" method="post">
-                <div class="client-info__flex-2">
+                <div class="client-info__container">
                     <fieldset class="client-info__name ">
-                        <div class="client-info__wrapper-3 client-info__flex client-info__flex-name">
+                        <div class="client-info__wrap client-info__cont">
 
                             <div class="client-info__div">
-                                <label for="second-name" class="client-info__label-name client-info__label-1">Фамилия</label>
-                                <input class="client-info__input client-info__input-1" placeholder="Укажите фамилию *" id="second-name">
+                                <label for="second-name" class="client-info__label-name ">Фамилия</label>
+                                <input class="client-info__input client-info__input-position" placeholder="Укажите фамилию *" id="second-name">
                             </div>
                             <div class="client-info__div">
 
-                                <label for="name" class="client-info__label-name client-info__label-1">Имя</label>
-                                <input class="client-info__input client-info__input-1 client-info__input-name" placeholder="Введите ваше имя *" id="name">
+                                <label for="name" class="client-info__label-name">Имя</label>
+                                <input class="client-info__input client-info__input-position client-info__input-name" placeholder="Введите ваше имя *" id="name">
                             </div>
                             <div class="client-info__div">
-                                <label for="patronymic" class="client-info__label-name client-info__label-1">Отчество:</label>
-                                <input class="client-info__input client-info__input-1" placeholder="Ну и отчество тоже" id="patronymic">
+                                <label for="patronymic" class="client-info__label-name ">Отчество:</label>
+                                <input class="client-info__input client-info__input-position" placeholder="Ну и отчество тоже" id="patronymic">
                             </div>
                         </div>
                     </fieldset>
@@ -84,7 +84,7 @@
                         <legend class="client-info__head">С каким приложением<br> путешествовали?
 
                         </legend>
-                        <div class="client-info__wrapper-3  client-info__flex">
+                        <div class="client-info__wrap  client-info__cont">
 
                             <input type="radio" class="client-info__radio visually-hidden" id="radio-1" name="user-app">
                             <label class="client-info__label client-info__label-user" for="radio-1">Pink для iOS</label>
@@ -97,33 +97,33 @@
 
                     <fieldset class="client-info__progress">
                         <legend class="client-info__head">Ваши безбашенные<br> достижения в путешествии</legend>
-                        <div class="client-info__wrapper  client-info__flex client-info__flex-progress">
+                        <div class="client-info__wrapper  client-info__cont client-info__cont-progress">
 
                             <input type="checkbox" class="client-info__checkbox visually-hidden" id="self">
-                            <label class="client-info__label client-info__label-2" for="self">Сделал селфи с акулой</label>
+                            <label class="client-info__label client-info__label-position" for="self">Сделал селфи с акулой</label>
                             <input type="checkbox" class="client-info__checkbox visually-hidden" id="beach">
-                            <label class="client-info__label client-info__label-2" for="beach">Обгорел на пляже</label>
+                            <label class="client-info__label client-info__label-position" for="beach">Обгорел на пляже</label>
                             <input type="checkbox" class="client-info__checkbox visually-hidden " id="chack">
-                            <label class="client-info__label client-info__label-2 " for="chack">Видел Чака Норриса</label>
+                            <label class="client-info__label client-info__label-position " for="chack">Видел Чака Норриса</label>
                             <input type="checkbox" class="client-info__checkbox visually-hidden " id="buy">
-                            <label class="client-info__label client-info__label-2 " for="buy">Накупил сувениров</label>
+                            <label class="client-info__label client-info__label-position " for="buy">Накупил сувениров</label>
                             <input type="checkbox" class="client-info__checkbox visually-hidden " id="keep">
-                            <label class="client-info__label client-info__label-2 " for="keep">Удержал башню</label>
+                            <label class="client-info__label client-info__label-position " for="keep">Удержал башню</label>
                             <input type="checkbox" class="client-info__checkbox visually-hidden " id="hotel">
-                            <label class="client-info__label client-info__label-2 " for="hotel">Разгромил отель</label>
+                            <label class="client-info__label client-info__label-position " for="hotel">Разгромил отель</label>
                         </div>
                     </fieldset>
 
                     <fieldset class="client-info__contact ">
                         <legend class="client-info__head client-info__head-contact">контактная информация</legend>
-                        <div class="client-info__wrapper client-info__flex client-info__flex-contact ">
+                        <div class="client-info__wrapper client-info__cont client-info__wrap-contact ">
                             <div class="client-info__contact-div">
-                                <label for="number " class="client-info__label-3  ">Номер Телефона</label>
-                                <input class="client-info__input client-info__input-3 " placeholder="Номер, пожалуйста " id="number ">
+                                <label for="number " class="client-info__label-wrap  ">Номер Телефона</label>
+                                <input class="client-info__input client-info__input-wrap " placeholder="Номер, пожалуйста " id="number ">
                             </div>
                             <div class="client-info__contact-div">
-                                <label for="email " class="client-info__label-3 ">Адрес Почты</label>
-                                <input class="client-info__input client-info__input-3 " placeholder="Введите почту * " id="email ">
+                                <label for="email " class="client-info__label-wrap ">Адрес Почты</label>
+                                <input class="client-info__input client-info__input-wrap " placeholder="Введите почту * " id="email ">
                             </div>
                         </div>
                     </fieldset>
@@ -139,17 +139,17 @@
                     </textarea>
 
                 </fieldset>
-                <div class="client-info__wrapper client-info__flex-button ">
+                <div class="client-info__wrapper client-info__wrap-button ">
                     <button class="client-info__button ">Отправить форму</button>
-                    <p class="client-info__text-2 client-info__desktop-1 "><span class="client-info__span-2">*</span> — обязательные поля</p>
-                    <p class="client-info__text-2 client-info__desktop"><span class="client-info__span-2">*</span> — обязательные для заполнения поля</p>
+                    <p class=" client-info__text--hidden "><span class="client-info__star">*</span> — обязательные поля</p>
+                    <p class=" client-info__text--visible"><span class="client-info__star">*</span> — обязательные для заполнения поля</p>
                 </div>
             </form>
 
         </section>
     </main>
     <footer class="footer ">
-        <div class="footer__wrapper footer__flex">
+        <div class="footer__wrapper footer__container">
             <a class="footer__logo " href="# "><img src="img/logo/logo-footer.svg " width="145 " height="40 " alt="логотип "></a>
             <ul class="footer__social-list ">
                 <li class="footer__item ">
@@ -162,7 +162,7 @@
                     <a href="# "><img src="img/icon/youtube.svg " width="48 " height="48 " alt="Ютуб "></a>
                 </li>
             </ul>
-            <div class="footer__flex-2">
+            <div class="footer__wrap">
                 <p class="footer__developer ">Разработано
                 </p>
                 <a class="footer__logo-academy " href="# "><img src="img/logo/academy-logo.svg " width="27 " height="47 " alt="Логотип академии "></a>
