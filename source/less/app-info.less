@@ -1,6 +1,7 @@
 .app-info__wrapper{
   width:280px;
   margin:0 auto;
+  position:relative;
   @media(min-width:@tablet-width){
   width:620px;
   }
@@ -88,4 +89,20 @@ margin:0;
 margin-top:102px;
 margin-left:42px;
     }
+}
+
+
+.app-info__hand{
+ position:absolute;
+ top:76px;
+ left:-19px;
+ z-index:-100;
+ @media(min-width:@tablet-width){
+top:-102px;
+ }
+ @media(min-width:@desktop-width){
+  left:172px;
+   }
+
+
 }
