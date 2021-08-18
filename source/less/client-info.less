@@ -448,3 +448,57 @@ margin-left:70px;
       }
 
   }
+
+  .client-info__phone{
+   position:relative;
+  }
+
+  .client-info__phone::before{
+   content:"";
+   width:59px;
+   height:56px;
+   background-color:@grey;
+   background-image:url(../img/icon/phone.svg);
+   background-repeat:no-repeat;
+   background-position:center;
+   position:absolute;
+   top:-73px;
+    left:561px;
+   display:none;
+   @media(min-width:@tablet-width){
+    display:block;
+   }
+   @media(min-width:@desktop-width){
+    display:block;
+    left:344px;
+   }
+
+  }
+
+
+  .client-info__email{
+    position:relative;
+   }
+
+   .client-info__email::before{
+    content:"";
+    width:59px;
+    height:56px;
+    background-color:@grey;
+    background-image:url(../img/icon/mail.svg);
+    background-repeat:no-repeat;
+    background-position:center;
+    position:absolute;
+    top:-73px;
+    left:561px;
+    display:none;
+    @media(min-width:@tablet-width){
+      display:block;
+     }
+     @media(min-width:@desktop-width){
+      display:block;
+      left:344px;
+
+     }
+
+   }
