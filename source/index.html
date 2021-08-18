@@ -5,6 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Pink</title>
+    <link rel="icon" href="../favicon.ico">
+    <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="applefavicon" href="img/favicon/applefavicon.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
 
 
@@ -12,7 +16,7 @@
 </head>
 
 <body class="page-body">
-    <header class="header">
+    <header class="header header__open-menu">
         <div class="header__wrapper ">
 
             <a class="header__logo" href="index.html">
@@ -22,19 +26,19 @@
 
 
             <nav class="main-nav">
-                <button class=" main-nav__toggle main-nav__toggle--open " type="button"><span class="visually-hidden">Открыть
+                <button class=" main-nav__toggle main-nav__toggle--close" type="button"><span class="visually-hidden">Открыть
                 меню</span></button>
-                <ul class="main-nav__list ">
+                <ul class="main-nav__list main-nav__list--open ">
 
 
                     <li class="main-nav__item">
                         <a href="index.html">Главная</a>
                     </li>
                     <li class="main-nav__item">
-                        <a href="#">Фотографии</a>
+                        <a href="catalog.html">Фотографии</a>
                     </li>
                     <li class="main-nav__item">
-                        <a href="#">Конкурс</a>
+                        <a href="form.html">Конкурс</a>
                     </li>
                     <li class="main-nav__item">
                         <a href="#">Html
@@ -56,82 +60,90 @@
                     Взгляните на жизнь<br> иначе!
                 </p>
 
+                <picture>
+                    <source media="(min-width: 940px)" srcset="img/mobile/mobile-hand-desktop.png, img/mobile/mobile-hand-desktop@2x.png 2x" width="940" height="545">
+                    <source media="(min-width: 660px)" srcset="img/mobile/mobile-hand-tablet.png, img/mobile/mobile-hand-tablet@2x.png 2x" width="660" height="545">
+                    <img class="app-info__hand" src="img/mobile/mobile-hand.png" srcset="img/mobile/mobile-hand2x.png 2x" width="320" height="286">
+                </picture>
 
 
-                <a class="app-info__download" href="#">Скачать
+
+                <a class="app-info__download " href="# ">Скачать
             приложение</a>
-                <ul class="app-info__social-list">
-                    <li class="app-info__item">
-                        <a href="#"><img src="img/icon/apple.svg" width="47" height="56" alt="Иконка Apple"></a>
+                <ul class="app-info__social-list ">
+                    <li class="app-info__item ">
+                        <a href="# "><img src="img/icon/apple.svg " width="47 " height="56 " alt="Иконка Apple "></a>
                     </li>
-                    <li class="app-info__item">
-                        <a href="#"><img src="img/icon/android.svg" width="43" height="47" alt="Иконка Android"></a>
+                    <li class="app-info__item ">
+                        <a href="# "><img src="img/icon/android.svg " width="43 " height="47 " alt="Иконка Android "></a>
                     </li>
-                    <li class="app-info__item">
-                        <a href="#"><img src="img/icon/microsoft.svg" width="44" height="41" alt="Иконка Microsoft"></a>
+                    <li class="app-info__item ">
+                        <a href="# "><img src="img/icon/microsoft.svg " width="44 " height="41 " alt="Иконка Microsoft "></a>
                     </li>
 
                 </ul>
-                <p class="app-info__maintenance">
+                <p class="app-info__maintenance ">
                     Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
                 </p>
 
             </div>
 
         </section>
-        <section class="advantage">
+        <section class="advantage ">
 
-            <h2 class="visually-hidden">Наши преимущества
+            <h2 class="visually-hidden ">Наши преимущества
             </h2>
-            <div class="advantage__background">
-                <div class="advantage__wrapper">
-                    <p class="advantage__text advantage__text-1">
+            <div class="advantage__background ">
+                <div class="advantage__wrapper ">
+                    <p class="advantage__text advantage__text-1 ">
                         Устали от серости мегаполиса?
-                        <p class="advantage__text advantage__text-2"> Нам есть, что вам педложить!</p>
+                        <p class="advantage__text advantage__text-2 "> Нам есть, что вам педложить!</p>
                     </p>
                 </div>
             </div>
-            <div class="advantage__wrapper advantage__flex">
-                <ul class="advantage__list">
-                    <li class="advantage__item">
-                        <h3 class="advantage__item-head">
-                            Поднимает настроение
-                        </h3>
-                        <p class="advantage__item-text">
-                            Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-                        </p>
-                    </li>
-                    <li class="advantage__item">
-                        <h3 class="advantage__item-head">
-                            Меняет мир вокруг
-                        </h3>
-                        <p class="advantage__item-text">
-                            Сделайте снимок и украсьте его<br> смайликом или текстовой подписью,<br> чтобы усилить эффект
-                        </p>
-                    </li>
-                    <li class="advantage__item">
-                        <h3 class="advantage__item-head">
-                            Заводит новых друзей
-                        </h3>
-                        <p class="advantage__item-text">
-                            Ставьте лайки, комментируйте,<br> делитесь фотографиями с друзьями и<br> заводите новых
-                        </p>
-                    </li>
-                </ul>
-                <div class="advantage__div-image">
-                    <div class="advantage__img adavantage__img-1"></div>
-                    <div class="advantage__img adavantage__img-2"></div>
-                    <div class="advantage__img adavantage__img-3"></div>
+            <div class=" advantage__linear ">
+                <div class="advantage__wrapper advantage__container ">
+                    <ul class="advantage__list ">
+                        <li class="advantage__item ">
+                            <h3 class="advantage__item-head ">
+                                Поднимает настроение
+                            </h3>
+                            <p class="advantage__item-text ">
+                                Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+                            </p>
+                        </li>
+                        <li class="advantage__item ">
+                            <h3 class="advantage__item-head ">
+                                Меняет мир вокруг
+                            </h3>
+                            <p class="advantage__item-text ">
+                                Сделайте снимок и украсьте его<br> смайликом или текстовой подписью,<br> чтобы усилить эффект
+                            </p>
+                        </li>
+                        <li class="advantage__item ">
+                            <h3 class="advantage__item-head ">
+                                Заводит новых друзей
+                            </h3>
+                            <p class="advantage__item-text ">
+                                Ставьте лайки, комментируйте,<br> делитесь фотографиями с друзьями и<br> заводите новых
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="advantage__img ">
+                        <div class="advantage__img-friend "></div>
+                        <div class="advantage__img-up "></div>
+                        <div class="advantage__img-world "></div>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="effect ">
-            <div class="effect__wrapper">
-                <div class="effect__timer-photo"></div>
+            <div class="effect__wrapper ">
+                <div class="effect__timer-photo "></div>
                 <div>
-                    <p class="effect__head">Эффект на 24 часа!</p>
-                    <p class="effect__slogan">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-                    <a class="effect__link" href="#">Узнать больше об исследовании</a>
+                    <p class="effect__head ">Эффект на 24 часа!</p>
+                    <p class="effect__slogan ">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+                    <a class="effect__link " href="# ">Узнать больше об исследовании</a>
                 </div>
             </div>
         </section>
@@ -139,7 +151,7 @@
             <h2 class="visually-hidden ">Комментарии
             </h2>
             <div class="comments__wrapper comments__flex ">
-                <span class="comments__span"></span>
+                <span class="comments__span "></span>
                 <cite class="comments__author ">Николай
           Петров<br><span>25 лет, водитель трамвая</span></cite>
 
@@ -151,7 +163,7 @@
 
                 <ul class="comments__button-list ">
                     <li class="comments__button-item ">
-                        <button class="comments__button-1 comments__button--active  "></button>
+                        <button class="comments__button-1 comments__button--active "></button>
                     </li>
                     <li class="comments__button-item ">
                         <button class="comments__button-2 "></button>
@@ -161,8 +173,8 @@
                     </li>
 
                 </ul>
-                <button class="comments__button-next" type="button"></button>
-                <button class="comments__button-back" type="button"></button>
+                <button class="comments__button-next " type="button "></button>
+                <button class="comments__button-back " type="button "></button>
 
             </div>
 
@@ -172,9 +184,9 @@
             </h2>
             <div class="offer__wrapper ">
                 <div class="offer__table ">
-                    <div class="offer__table-column-head">
+                    <div class="offer__table-column-head ">
 
-                        <div class="offer__table-head  offer__head-1 offer__head--hidden ">
+                        <div class="offer__table-head offer__head-1 offer__head--hidden ">
 
                             База<br><span>1,99
             USD</span>
@@ -193,81 +205,81 @@
 
                         </div>
                     </div>
-                    <div class="offer__table-column-flex">
-                        <div class="offer__table-column">
+                    <div class="offer__table-column-wrapper ">
+                        <div class="offer__table-column ">
                             <div class="offer__table-row ">
 
                                 <p>Розовый фильтр</p>
-                                <span class=" offer__table-check-1 offer-table__yes"></span>
+                                <span class=" offer__table-check-1 offer-table__yes "></span>
 
                             </div>
                             <div class="offer__table-row ">
 
                                 <p>Смайлики</p>
-                                <span class=" offer__table-check-2 offer-table__yes"></span>
+                                <span class=" offer__table-check-2 offer-table__yes "></span>
 
 
                             </div>
                             <div class="offer__table-row ">
                                 <p>Комментарии</p>
-                                <span class="offer__table-check-3 offer-table__yes offer-table__no  "></span>
+                                <span class="offer__table-check-3 offer-table__yes offer-table__no "></span>
 
 
                             </div>
                         </div>
-                        <div class="offer__table-column  offer__table-column-2">
+                        <div class="offer__table-column offer__table-column-2 ">
                             <div class="offer__table-row ">
 
-                                <span class="offer-table__yes-tablet"></span>
+                                <span class="offer-table__yes-tablet "></span>
 
                             </div>
                             <div class="offer__table-row ">
 
-                                <span class="offer-table__no-tablet"></span>
-
-
-                            </div>
-                            <div class="offer__table-row ">
-
-                                <span class="offer-table__no-tablet"></span>
-
-
-                            </div>
-                        </div>
-                        <div class="offer__table-column offer__table-column-3">
-                            <div class="offer__table-row ">
-
-                                <span class="offer-table__yes-tablet"></span>
-
-                            </div>
-                            <div class="offer__table-row ">
-
-                                <span class="offer-table__yes-tablet"></span>
+                                <span class="offer-table__no-tablet "></span>
 
 
                             </div>
                             <div class="offer__table-row ">
 
-                                <span class="offer-table__no-tablet"></span>
+                                <span class="offer-table__no-tablet "></span>
 
 
                             </div>
                         </div>
-                        <div class="offer__table-column offer__table-column-4">
+                        <div class="offer__table-column offer__table-column-3 ">
                             <div class="offer__table-row ">
 
-                                <span class="offer-table__yes-tablet"></span>
+                                <span class="offer-table__yes-tablet "></span>
 
                             </div>
                             <div class="offer__table-row ">
 
-                                <span class="offer-table__yes-tablet"></span>
+                                <span class="offer-table__yes-tablet "></span>
 
 
                             </div>
                             <div class="offer__table-row ">
 
-                                <span class="offer-table__yes-tablet"></span>
+                                <span class="offer-table__no-tablet "></span>
+
+
+                            </div>
+                        </div>
+                        <div class="offer__table-column offer__table-column-4 ">
+                            <div class="offer__table-row ">
+
+                                <span class="offer-table__yes-tablet "></span>
+
+                            </div>
+                            <div class="offer__table-row ">
+
+                                <span class="offer-table__yes-tablet "></span>
+
+
+                            </div>
+                            <div class="offer__table-row ">
+
+                                <span class="offer-table__yes-tablet "></span>
 
 
                             </div>
@@ -283,7 +295,7 @@
                         <button class="offer__button-2 offer__button--active "></button>
                     </li>
                     <li class="offer__button-item ">
-                        <button class="offer__button-3  "></button>
+                        <button class="offer__button-3 "></button>
                     </li>
                 </ul>
             </div>
@@ -296,7 +308,7 @@
                     Остались вопросы?
                     <br> Свяжитесь с нами!
                 </p>
-                <div class="contacts__flex">
+                <div class="contacts__flex ">
                     <div>
                         <p class="contacts__info-head ">
                             Звоните:
@@ -329,7 +341,7 @@
         </section>
     </main>
     <footer class="footer ">
-        <div class="footer__wrapper footer__flex">
+        <div class="footer__wrapper footer__container ">
             <a class="footer__logo " href="# "><img src="img/logo/logo-footer.svg " width="145 " height="40 " alt="логотип "></a>
             <ul class="footer__social-list ">
                 <li class="footer__item ">
@@ -342,15 +354,15 @@
                     <a href="# "><img src="img/icon/youtube.svg " width="48 " height="48 " alt="Ютуб "></a>
                 </li>
             </ul>
-            <div class="footer__flex-2">
+            <div class="footer__wrap ">
                 <p class="footer__developer ">Разработано
                 </p>
                 <a class="footer__logo-academy " href="# "><img src="img/logo/academy-logo.svg " width="27 " height="47 " alt="Логотип академии "></a>
             </div>
         </div>
     </footer>
-    <script src="../source/js/header-menu.js"></script>
-    <script src="../source/js/button.js"></script>
+    <script src="../source/js/header-menu.js "></script>
+    <script src="../source/js/button.js "></script>
 
 
 </body>

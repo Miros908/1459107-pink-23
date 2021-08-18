@@ -5,14 +5,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Pink</title>
+    <link rel="icon" href="../favicon.ico">
+    <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="applefavicon" href="img/favicon/applefavicon.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
 
 
 
 </head>
 
-<body class="page-body-2">
-    <header class="header">
+<body class="page-body">
+    <header class="header header__open-menu">
         <div class="header__wrapper ">
 
             <a class="header__logo" href="index.html">
@@ -22,19 +26,19 @@
 
 
             <nav class="main-nav">
-                <button class=" main-nav__toggle main-nav__toggle--open " type="button"><span class="visually-hidden">Открыть
+                <button class=" main-nav__toggle main-nav__toggle--close" type="button"><span class="visually-hidden">Открыть
             меню</span></button>
-                <ul class="main-nav__list ">
+                <ul class="main-nav__list main-nav__list--open ">
 
 
                     <li class="main-nav__item">
                         <a href="index.html">Главная</a>
                     </li>
                     <li class="main-nav__item">
-                        <a href="#">Фотографии</a>
+                        <a href="catalog.html">Фотографии</a>
                     </li>
                     <li class="main-nav__item">
-                        <a href="#">Конкурс</a>
+                        <a href="form.html">Конкурс</a>
                     </li>
                     <li class="main-nav__item">
                         <a href="#">Html
@@ -60,10 +64,10 @@
                 <p class="users-photo__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
             </div>
             <picture>
-                <source media="(min-width: 976px)" srcset="img/photo-users/panorama-desktop.jpg, img/photo-users/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width: 940px)" srcset="img/photo-users/panorama-desktop.jpg, img/photo-users/panorama-desktop@2x.jpg 2x">
                 <source media="(min-width: 620px)" srcset="img/photo-users/panorama-tablet.jpg, img/photo-users/panorama-tablet@2x.jpg 2x">
 
-                <img class="users-photo__img" src="img/photo-users/panorama.jpg">
+                <img class="users-photo__img" src="img/photo-users/panorama.jpg" srcset="img/photo-users/panorama@2x.jpg 2x">
 
             </picture>
             <div class="users-photo__wrapper">
@@ -83,7 +87,11 @@
                     </li>
 
                     <li class="users-photo__item ">
-                        <img class="users-photo__img" src="img/photo-users/photo-2-mobile.jpg">
+                        <picture>
+                            <source media="(min-width: 940px)" srcset="img/photo-users/photo-1-desktop.jpg, img/photo-users/photo-1-desktop@2x.jpg 2x" width="300" height="400">
+                            <source media="(min-width: 620px)" srcset="img/photo-users/photo-1-tablet.jpg, img/photo-users/photo-1-tablet@2x.jpg 2x" width="300" height="300">
+                            <img class="users-photo__img" src="img/photo-users/photo-1-mobile.jpg" srcset="img/photo-users/photo-1-mobile@2x.jpg 2x" width="280" height="180">
+                        </picture>
                         <cite class="users-photo__author">Левон<time class="users-photo__time">(5 часов назад)</time></cite>
                         <blockquote class="users-photo__blockquote">Вчера он на луну летал, сегодня в<br> руки к нам попал.</blockquote>
                         <button class="users-photo__button"><svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -94,8 +102,11 @@
                     </li>
 
                     <li class="users-photo__item">
-                        <img src="img/photo-users/photo-2-mobile.jpg" width="280" height="180" alt="панорама">
-
+                        <picture>
+                            <source media="(min-width: 940px)" srcset="img/photo-users/photo-2-desktop.jpg, img/photo-users/photo-2-desktop@2x.jpg 2x" width="300" height="400">
+                            <source media="(min-width: 620px)" srcset="img/photo-users/photo-2-tablet.jpg, img/photo-users/photo-2-tablet@2x.jpg 2x" width="300" height="300">
+                            <img src="img/photo-users/photo-2-mobile.jpg" srcset="img/photo-users/photo-2-mobile@2x.jpg 2x" width="280" height="180" alt="панорама">
+                        </picture>
                         <cite class="users-photo__author">Антон<time class="users-photo__time">(12 часов назад)</time></cite>
                         <blockquote class="users-photo__blockquote">Соседи будут рады!</blockquote>
                         <button class="users-photo__button"><svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -106,8 +117,11 @@
                     </li>
 
                     <li class="users-photo__item">
-                        <img src="img/photo-users/photo-3-tablet.jpg" width="280" height="180" alt="панорама">
-
+                        <picture>
+                            <source media="(min-width: 940px)" srcset="img/photo-users/photo-3-desktop.jpg, img/photo-users/photo-3-desktop@2x.jpg 2x" width="300" height="400">
+                            <source media="(min-width: 620px)" srcset="img/photo-users/photo-3-tablet.jpg, img/photo-users/photo-3-tablet@2x.jpg 2x" width="300" height="300">
+                            <img src="img/photo-users/photo-3-mobile.jpg" srcset="img/photo-users/photo-3-mobile@2x.jpg 2x" width="280" height="180" alt="панорама">
+                        </picture>
                         <cite class="users-photo__author">Борис<time class="users-photo__time">(20 часов назад)</time></cite>
                         <blockquote class="users-photo__blockquote">Здесь могла быть ваша цитата о<br> высоком и вечном.</blockquote>
                         <button class="users-photo__button"><svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -118,8 +132,11 @@
                     </li>
 
                     <li class="users-photo__item">
-                        <img src="img/photo-users/photo-4-tablet.jpg" width="280" height="180" alt="панорама">
-
+                        <picture>
+                            <source media="(min-width: 940px)" srcset="img/photo-users/photo-4-desktop.jpg, img/photo-users/photo-4-desktop@2x.jpg 2x" width="300" height="400">
+                            <source media="(min-width: 620px)" srcset="img/photo-users/photo-4-tablet.jpg, img/photo-users/photo-4-tablet@2x.jpg 2x" width="300" height="300">
+                            <img src="img/photo-users/photo-4-mobile.jpg" srcset="img/photo-users/photo-4-mobile@2x.jpg 2x" width="280" height="180" alt="панорама">
+                        </picture>
                         <cite class="users-photo__author">Сергей<time class="users-photo__time">(25 часов назад)</time></cite>
                         <blockquote class="users-photo__blockquote">Самая кубанская в мире!</blockquote>
                         <button class="users-photo__button"><svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -130,8 +147,11 @@
                     </li>
 
                     <li class="users-photo__item">
-                        <img src="img/photo-users/photo-5-tablet.jpg" width="280" height="180" alt="панорама">
-
+                        <picture>
+                            <source media="(min-width: 940px)" srcset="img/photo-users/photo-5-desktop.jpg, img/photo-users/photo-5-desktop@2x.jpg 2x" width="300" height="400">
+                            <source media="(min-width: 620px)" srcset="img/photo-users/photo-5-tablet.jpg, img/photo-users/photo-5-tablet@2x.jpg 2x" width="300" height="300">
+                            <img src="img/photo-users/photo-5-mobile.jpg" srcset="img/photo-users/photo-5-mobile@2x.jpg 2x" width="280" height="180" alt="панорама">
+                        </picture>
                         <cite class="users-photo__author">Максим<time class="users-photo__time">(40 часов назад)</time></cite>
                         <blockquote class="users-photo__blockquote">
                             Где снег-то?</blockquote>
@@ -143,8 +163,11 @@
                     </li>
 
                     <li class="users-photo__item">
-                        <img src="img/photo-users/photo-6-tablet.jpg" width="280" height="180" alt="панорама">
-
+                        <picture>
+                            <source media="(min-width: 940px)" srcset="img/photo-users/photo-6-desktop.jpg, img/photo-users/photo-6-desktop@2x.jpg 2x" width="300" height="400">
+                            <source media="(min-width: 620px)" srcset="img/photo-users/photo-6-tablet.jpg, img/photo-users/photo-6-tablet@2x.jpg 2x" width="300" height="300">
+                            <img src="img/photo-users/photo-6-mobile.jpg" srcset="img/photo-users/photo-6-mobile@2x.jpg 2x" width="280" height="180" alt="панорама">
+                        </picture>
                         <cite class="users-photo__author">Надежда<time class="users-photo__time"></time>(45 часов назад)</cite>
                         <blockquote class="users-photo__blockquote">Всем GM и взаимные лайки!</blockquote>
                         <button class="users-photo__button"><svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -165,11 +188,14 @@
             <div class="users-filter__background">
                 <div class="users-filter__wrapper">
 
-                    <div class="users-filter__flex">
-                        <img src="img/photo-users/photo-7-tablet.jpg" width="280" height="374" alt="Зима">
+                    <div class="users-filter__container">
+                        <picture>
+                            <source media="(min-width: 620px)" srcset="img/photo-users/photo-7-tablet.jpg, img/photo-users/photo-7-tablet@2x.jpg 2x" width="300" height="400">
+                            <img src="img/photo-users/photo-7-mobile.jpg" srcset="img/photo-users/photo-7-mobile@2x.jpg 2x" width="280" height="374" alt="Зима">
+                        </picture>
                         <form class="users-filter__form" action="htmlacademy.echo" method="post">
-                            <div class="users-filter__flex-4">
-                                <div class="users-filter__flex-2">
+                            <div class="users-filter__wrap">
+                                <div class="users-filter__cont">
                                     <input class="users-filter__checkbox visually-hidden" type="checkbox" name="crop" id="crop">
                                     <label class="users-filter__label " for="crop"><svg width="44 " height="44 " viewBox="0 0 44 44 " fill="none " xmlns="http://www.w3.org/2000/svg ">
                       <path d="M32 28H36V12C36 10.9391 35.5786 9.92172 34.8284 9.17157C34.0783 8.42143 33.0609 8 32 8H16V12H32V28ZM12 32V0H8V8H0V12H8V32C8 33.0609 8.42143 34.0783 9.17157 34.8284C9.92172 35.5786 10.9391 36 12 36H32V44H36V36H44V32H12Z "/>
@@ -196,14 +222,14 @@
                       </svg>
                     </label>
                                 </div>
-                                <div class="users-filter__flex-3">
+                                <div class="users-filter__position">
                                     <div class="users-filter__range ">
                                         <div class="users-filter__toggle " tabindex="0 " style="left:80% "></div>
                                     </div>
-                                    <div class="users-filter__range-1 ">
+                                    <div class="users-filter__range-hidden ">
                                         <div class="users-filter__toggle " tabindex="0 " style="left:80% "></div>
                                     </div>
-                                    <div class="users-filter__range-1 ">
+                                    <div class="users-filter__range-hidden ">
                                         <div class="users-filter__toggle " tabindex="0 " style="left:80% "></div>
                                     </div>
                                 </div>
@@ -221,7 +247,7 @@
 
     </main>
     <footer class="footer ">
-        <div class="footer__wrapper footer__flex">
+        <div class="footer__wrapper footer__container">
             <a class="footer__logo " href="# "><img src="img/logo/logo-footer.svg " width="145 " height="40 " alt="логотип "></a>
             <ul class="footer__social-list ">
                 <li class="footer__item ">
@@ -234,15 +260,13 @@
                     <a href="# "><img src="img/icon/youtube.svg " width="48 " height="48 " alt="Ютуб "></a>
                 </li>
             </ul>
-            <div class="footer__flex-2">
+            <div class="footer__wrap">
                 <p class="footer__developer ">Разработано
                 </p>
                 <a class="footer__logo-academy " href="# "><img src="img/logo/academy-logo.svg " width="27 " height="47 " alt="Логотип академии "></a>
             </div>
         </div>
     </footer>
-
-
     <script src="../source/js/header-menu.js "></script>
     <script src="../source/js/button.js "></script>
 

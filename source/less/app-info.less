@@ -1,6 +1,7 @@
 .app-info__wrapper{
   width:280px;
   margin:0 auto;
+  position:relative;
   @media(min-width:@tablet-width){
   width:620px;
   }
@@ -39,8 +40,8 @@
   margin:0;
   margin-top:44px;
   @media(min-width:@tablet-width){
-   justify-content: start;
-   margin-left:40px;
+    justify-content: start;
+    margin-left:40px;
   }
   .app-info__item{
     @media(min-width:@tablet-width){
@@ -57,29 +58,29 @@
   .font-style(300;14px;);
   text-align:center;
   @media(min-width:@tablet-width){
-   width:304px;
+    width:304px;
 
-   margin-top:38px;
-   .font-style(300;18px;);
+    margin-top:38px;
+    .font-style(300;18px;);
   }
 
 }
 
 .app-info__background{
- background-color:@special-black;
- @media(min-width:@tablet-width){
- background-color: transparent;
+  background-color:@special-black;
+  @media(min-width:@tablet-width){
+  background-color: transparent;
 
- }
+  }
 }
 
 .app-info__slogan{
   font-family: @OpenSans;
   .font-style(300;24px;);
-   color:@white;
-   margin-bottom:233px;
-   text-align:center;
-   @media(min-width:@tablet-width){
+    color:@white;
+    margin-bottom:233px;
+    text-align:center;
+    @media(min-width:@tablet-width){
 
 .font-style(300;40px;);
 line-height:48px;
@@ -87,11 +88,21 @@ width:193px;
 margin:0;
 margin-top:102px;
 margin-left:42px;
-   }
+    }
 }
 
 
+.app-info__hand{
+ position:absolute;
+ top:76px;
+ left:-19px;
+ z-index:-100;
+ @media(min-width:@tablet-width){
+top:-102px;
+ }
+ @media(min-width:@desktop-width){
+  left:172px;
+   }
 
 
-
-
+}
