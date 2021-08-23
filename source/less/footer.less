@@ -3,6 +3,12 @@
   .font-style(400;14px;);
   color:@dark-black;
   margin-right:15px;
+  @media(min-width:@desktop-width){
+    .font-style(400;18px;);
+    margin-top:9px;
+    margin-right:13px;
+
+  }
 }
 
 .footer__wrapper{
@@ -27,17 +33,105 @@
  display:flex;
  list-style: none;
  padding:0;
- margin-left:63px;
-
+ margin-left:50px;
+ margin-top:34px;
+ @media(min-width:@tablet-width){
+ margin-left:75px;
+ margin-top:32px;
+ }
+ @media(min-width:@desktop-width){
+  margin-top:65px;
+  margin-left:94px;
 }
+}
+
+.footer__twitter-icon{
+ margin-right:9px;
+ @media(min-width:@desktop-width){
+  margin-right:5px;
+}
+}
+.footer__facebook-icon{
+  margin-right:9px;
+  @media(min-width:@desktop-width){
+    margin-right:5px;
+  }
+ }
 
 .footer{
  background-color:@white;
  text-align:center;
+ padding-bottom:70px;
+ @media(min-width:@tablet-width){
+  padding-top:9px;
+ }
 
+
+}
+
+.footer__html-logo{
+ margin-top:5px;
 }
 
 .footer__wrap{
  display: flex;
  margin-left:75px;
+ margin-top:29px;
+ @media(min-width:@tablet-width){
+  margin-top:34px;
+  margin-left:89px;
+ }
+ @media(min-width:@desktop-width){
+ margin-top:71px;
+ margin-right:-20px;
+ }
+
+}
+
+.footer__logos{
+ fill:@black;
+ &:hover{
+  fill:@red;
+ }
+}
+
+.footer__logo{
+  display:block;
+  padding-top:36px;
+  @media(min-width:@tablet-width){
+   margin-top:-4px;
+   margin-left:-19px;
+  }
+  &:focus{
+    opacity: 30%;
+}
+@media(min-width:@desktop-width){
+  margin-top:29px;
+  margin-left:-19px;
+}
+}
+
+.footer__link svg{
+ stroke:@black-opacity;
+
+}
+
+.footer__link:hover svg{
+stroke:@black;
+opacity:100%;
+
+
+}
+.footer__link:focus svg{
+ opacity:30%;
+}
+.footer__logo-academy svg{
+ fill:@red;
+}
+.footer__logo-academy:hover svg{
+ fill:@black;
+}
+
+.footer__logo-academy:focus{
+ opacity:30%;
 }

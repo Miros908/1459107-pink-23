@@ -20,35 +20,75 @@
   border-radius: 29px;
   line-height: 18px;
   font-size:18px;
-  width:280px;
+  width:273px;
   display:block;
   text-align:center;
-  padding:14px 0;
-  margin-top:326px;
+  padding-top:15px;
+  padding-bottom:16px;
+  margin-top:343px;
 
   @media(min-width:@tablet-width){
-    margin-top:39px;
-    margin-left:1px;
+    margin-top:30px;
+    margin-left:-20px;
+    width:295px;
+
+  }
+  &:hover{
+   color:@red;
+   background-color: @white;
+  }
+  &:focus{
+  color:@red-opacity;
+  background-color: @white;
+  }
+  @media(min-width:@desktop-width){
+    width: 294px;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    margin-top: 37px;
+    margin-left: -19px;
+    font-size: 21px;
+    line-height: 18px;
   }
 }
+
+.app__info-android-icon{
+ margin-left:32px;
+ margin-right:4px;
+}
+.app__info-apple-icon{
+  margin-top:-1px;
+  margin-left:-35px;
+ margin-right:3px;
+
+}
+.app__info-microsoft-icon{
+  margin-top:7px;
+  margin-left:31px;
+  margin-right:1px;
+  @media(min-width:@tablet-width){
+   margin-top:2px
+  }
+ }
+
 
 .app-info__social-list {
   list-style: none;
   display: flex;
-  justify-content: space-around;
   align-items:center;
   padding:0;
-  margin:0;
-  margin-top:44px;
+  margin:33px 0 0 73px ;
+
   @media(min-width:@tablet-width){
     justify-content: start;
-    margin-left:40px;
+    margin-left:61px;
+    margin-top:46px;
   }
-  .app-info__item{
-    @media(min-width:@tablet-width){
-    margin-right:35px;
-    }
+  @media(min-width:@desktop-width){
+   margin-top:70px;
+   margin-left:62px;
   }
+
 }
 
 
@@ -58,13 +98,20 @@
   font-family: @OpenSans;
   .font-style(300;14px;);
   text-align:center;
+  margin-top:17px;
+  margin-bottom:31px;
+  line-height:24px;
   @media(min-width:@tablet-width){
     width:304px;
-
-    margin-top:38px;
+    margin-left:-21px;
+    margin-top:29px;
     .font-style(300;18px;);
   }
-
+  @media(min-width:@desktop-width){
+   margin-top:46px;
+   margin-left:-22px;
+   margin-bottom:124px;
+  }
 }
 
 .app-info__background{
@@ -80,32 +127,45 @@
   .font-style(300;24px;);
     color:@white;
     margin-bottom:233px;
+    margin-top:26px;
     text-align:center;
+    line-height:120%;
     @media(min-width:@tablet-width){
 
 .font-style(300;40px;);
 line-height:48px;
 width:193px;
 margin:0;
-margin-top:102px;
-margin-left:42px;
+margin-top:94px;
+margin-left:33px;
     }
+
+ @media(min-width:@desktop-width){
+  margin-top:98px;
+  margin-left:-21px;
+  .font-style(300;50px;);
+  line-height: 68px;
+  width:300px;
+ }
 }
 
 
 .app-info__hand{
  position:absolute;
- top:76px;
- left:-19px;
+ top:85px;
+ left:-1px;
  z-index:-100;
  @media(min-width:@tablet-width){
-top:-102px;
-left:172px;
+top:-17px;
+left:143px;
  }
  @media(min-width:@desktop-width){
-  left:352px;
-  top:22px;
+  left:337px;
+  top:1px;
+
    }
 
 
 }
+
+

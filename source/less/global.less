@@ -13,6 +13,14 @@
   overflow   : hidden;
 }
 
+.current{
+  display:none;
+  @media(min-width:@desktop-width){
+    display:block;
+ border-bottom:2px solid @white;
+  }
+
+}
 
 //миксин
 .font-style(@font-weight;@font-size){
@@ -31,6 +39,11 @@ font-size:@font-size;
 @grey:#e5e5e5;
 @green:#2AAB6D;
 @border-color:rgba(255, 255, 255, 0.15);
+@red-opacity:rgba(210, 40, 86, 0.3);
+@black-opacity:rgba(40, 54, 69, 0.1);
+@button-green:#1C9B5E;
+@button-hover:rgba(255, 255, 255, 0.3);
+@white-opacity:rgba(255, 255, 255, 0.3);
 //Размеры экранов
 @tablet-width:620px;
 @desktop-width:940px;
@@ -44,3 +57,9 @@ ul{
  margin:0;
  padding:0;
 }
+
+
+//
+
+
+

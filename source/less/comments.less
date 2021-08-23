@@ -4,11 +4,20 @@
   .font-style(700;18px;);
   text-align: center;
   font-style: normal;
-  @media(min-width:@tablet-width){
-    font-size:24px;
-    }
 
+  @media(min-width:@tablet-width){
+    font-size:20px;
+    margin-top:37px;
+    margin-left:1px;
+    }
+    @media(min-width:@desktop-width){
+     margin-top:32px;
+     margin-left:1px;
+     .font-style(700;24px;);
+    }
 }
+
+
 
 .comments__author span{
   color:@dark-black;
@@ -18,6 +27,7 @@
   display:none;
   @media(min-width:@tablet-width){
   display:block;
+  margin-top:6px;
   }
   @media(min-width:@desktop-width){
     font-size:18px;
@@ -34,10 +44,19 @@
   line-height: 30px;
   padding:0;
   margin:0;
+  padding-top:16px;
+  @media(min-width:@tablet-width){
+    .font-style(400;18px;);
+    padding-top:74px;
+    margin-left:-26px;
+    width:630px;
+
+  }
   @media(min-width:@desktop-width){
     width:698px;
-    margin-left:129px;
+    margin-left:101px;
     font-size:18px;
+    margin-top:-47px;
     }
 }
 
@@ -68,12 +87,21 @@
 }
 .comments{
   background-color:@white;
-  margin-top:-1px;
+  margin-top:-16px;
   padding-bottom:21px;
+  z-index:1;
+  padding-top:43px;
   @media(min-width:@desktop-width){
-
+padding-bottom:1px;
   padding-top:159px;
 
+
+}
+
+.comments__button-style{
+  &:hover{
+    opacity:30%;
+   }
 
 }
 
@@ -82,9 +110,11 @@
 .comments__button-list{
   list-style: none;
   display:flex;
-  margin-left:66px;
+  margin-left:110px;
+margin-top:24px;
   @media(min-width:@tablet-width){
-  margin-left:233px;
+  margin-left:260px;
+  margin-top:34px;
   }
 
   @media(min-width:@desktop-width){
@@ -101,7 +131,7 @@ width:6px;
 height:6px;
 border-radius: 50%;
 margin-right:19px;
-opacity:30%;
+opacity:60%;
 }
 
 .comments__button--active{
@@ -109,8 +139,12 @@ opacity:30%;
   height:11px;
   background-color:@white;
   border: 3px solid @black;
-  opacity:100%;
-  margin-right:14px
+  opacity: 100%;
+  margin-right:14px;
+  &:hover{
+   opacity: none;
+
+  }
 }
 
 .comments__span{
@@ -122,8 +156,8 @@ opacity:30%;
   width:79px;
   height:70px;
   position:absolute;
-  top:-103px;
-  left:420px;
+  top:-86px;
+  left:431px;
   }
 }
 
@@ -138,8 +172,14 @@ opacity:30%;
   background-image:url(../img/icon/next.svg);
   background-repeat:no-repeat;
   position:absolute;
-  top:1px;
-  right:1px;
+  top:55px;
+  right:0;
+  &:hover{
+   opacity:60%;
+  }
+  &:focus{
+    opacity:10%;
+   }
   }
 }
 .comments__button-back{
@@ -153,5 +193,13 @@ opacity:30%;
   background-image:url(../img/icon/back.svg);
   background-repeat:no-repeat;
   position:absolute;
+  top:56px;
+  left:0;
+  &:hover{
+    opacity:60%;
+   }
+   &:focus{
+     opacity:10%;
+    }
   }
   }

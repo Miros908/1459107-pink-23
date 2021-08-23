@@ -17,13 +17,17 @@
  margin-bottom:-35px;
 }
 
+.users-filter__buttons{
+ margin-top:74px;
+}
+
 .users-filter__range{
  width:240px;
  height:2px;
  background-color:@black;
  position:relative;
- margin-top:31px;
-  margin-bottom:71px;
+ margin-top:36px;
+margin-left:4px;
 
  @media(min-width:@tablet-width){
   width:202px;
@@ -57,16 +61,48 @@ display:none;
  top:-6px;
 }
 
- .users-filter__label svg{
-  fill:@black;
-  opacity:30%;
-  @media(min-width:@tablet-width){
-   width:22px;
-   height:22px;
-   fill:@red;
-   opacity:100%;
+.users-filter__label svg{
+ fill:@black;
+ opacity:30%;
+@media(min-width:@tablet-width){
+ fill:@red;
+ opacity:100%;
+}
+}
 
-  }
+.users-filter__label:hover svg{
+ opacity:60%;
+}
+
+.users-filter__checkbox:checked+label svg{
+ fill:@red;
+ opacity:100%;
+}
+
+
+.users-filter__contrast{
+ width:32px;
+ height:32px;
+ @media(min-width:@tablet-width){
+  width:16px;
+  height:16px;
+ }
+}
+.users-filter__fill{
+ width:48px;
+ height:43px;
+ @media(min-width:@tablet-width){
+  width:24px;
+  height:22px;
+ }
+}
+.users-filter__crop{
+  width:44px;
+  height:44px;
+  @media(min-width:@tablet-width){
+    width:22px;
+    height:22px;
+   }
  }
 
  .users-filter__label{
@@ -77,33 +113,70 @@ display:none;
   }
  }
 
- .users-filter__label:hover svg{
-  opacity:50%;
+ .users-filter__toggle:focus{
+  background-color:@red;
  }
-  .users-filter__checkbox:checked+label svg{
-   fill:@red;
-   opacity:100%;
-  }
+
+
+
 
   .users-filter__form{
    display:flex;
    align-items:center;
    flex-direction:column;
+
+   padding-bottom:39px;
   }
-.users-filter__button{
- border:3px solid @red;
+.users-filter__button-push{
+  border:3px solid @red;
+  border-radius:30px;
+  color:@red;
+  background-color:inherit;
+  font-family: @OpenSans;
+ .font-style(700;18px;);
+line-height: 18px;
+width:279px;
+padding:15px 0px;
+margin-bottom:12px;
+
+&:hover{
+ background-color:@red;
+ color:@white;
+}
+&:focus{
+ color:@white-opacity;
+ background-color:@red;
+}
+
+
+
+@media(min-width:@tablet-width){
+ width:260px;
+}
+}
+
+.users-filter__button-cancel{
+  border:3px solid @black;
  border-radius:30px;
- color:@red;
+ color:@black;
  background-color:inherit;
  font-family: @OpenSans;
  .font-style(700;18px;);
 line-height: 18px;
 width:279px;
-padding:13px 0px;
+padding:15px 0px;
 margin-bottom:5px;
-@media(min-width:@tablet-width){
- width:260px;
+opacity:10%;
+&:hover{
+  opacity:30%;
 }
+&:focus{
+ background-color:@black;
+color:@white-opacity;
+
+}
+
+
 }
 .users-filter__buttons{
  @media(min-width:@tablet-width){
@@ -113,6 +186,10 @@ margin-bottom:5px;
  @media(min-width:@desktop-width){
   display:flex;
  }
+}
+
+.users-filter__label{
+ margin-right:35px;
 }
 
 
@@ -125,7 +202,8 @@ margin-bottom:5px;
 .users-filter__cont{
   display:flex;
   align-items:center;
-  justify-content: space-around;
+margin-top:37px;
+margin-left:21px;
   @media(min-width:@tablet-width){
 
    flex-direction: column;
@@ -150,7 +228,9 @@ margin-bottom:5px;
   text-align:center;
   line-height: 30px;
   width:100%;
-  margin:0;
+  padding-top:26px;
+  padding-bottom:44px;
+
 
 
  @media(min-width:@tablet-width){
@@ -163,5 +243,10 @@ margin-bottom:5px;
 
 .users-filter__background{
  background-color: @grey;
+ margin-top:-14px;
 
+}
+
+.users-filter__winter{
+ margin-top:18px;
 }
