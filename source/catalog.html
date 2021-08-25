@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Pink</title>
-    <link rel="icon" href="../favicon.ico">
+    <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
     <link rel="applefavicon" href="img/favicon/applefavicon.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 
 
 
@@ -195,20 +195,24 @@
 
                 </picture>
                 <div class="users-photo__wrapper">
+                    <ul class="users-photo__list-top">
+                        <div class="users-photo">
+                            <li class="users-photo__item-1">
+                                <div class="users-photo__item-wrap-top">
+                                    <cite class="users-photo__author">Анна<time class="users-photo__time">(5 минут назад)</time></cite>
 
+
+
+                                    <blockquote class="users-photo__blockquote">Прыгать или нет? Напишите в<br class="users-photo__br-mobile"> комментарии свой совет и<br class="users-photo__br-mobile"> смотрите прямую трансляцию в<br class="users-photo__br-mobile"> перископе, задавайте свои вопросы!</blockquote>
+                                    <button class="users-photo__button "><svg class="users-photo__heart" width="13 " height="12" role="img " aria-label="иконка лайка">
+<use xlink:href="#heart "></use>
+</svg><span class="users-photo__counter ">Нравится: 215</span>
+</button>
+                                </div>
+                            </li>
+                    </ul>
                     <ul class="users-photo__list  users-photo__flex">
-                        <li class="users-photo__item-1">
-                            <div class="users-photo__flex-1">
-                                <cite class="users-photo__author">Анна<time class="users-photo__time">(5 минут назад)</time></cite>
 
-
-                            </div>
-                            <blockquote class="users-photo__blockquote">Прыгать или нет? Напишите в<br class="users-photo__br-mobile"> комментарии свой совет и<br class="users-photo__br-mobile"> смотрите прямую трансляцию в<br class="users-photo__br-mobile"> перископе, задавайте свои вопросы!</blockquote>
-                            <button class="users-photo__button "><svg class="users-photo__heart" width="13 " height="12" role="img " aria-label="иконка лайка">
-                    <use xlink:href="#heart "></use>
-                  </svg><span class="users-photo__counter ">Нравится: 215</span>
-                </button>
-                        </li>
 
 
                         <li class="users-photo__item ">
@@ -221,13 +225,14 @@
                                 <source media="(min-width: 620px) " srcset="img/photo-users/photo-1-tablet.jpg, img/photo-users/photo-1-tablet@2x.jpg 2x " width="300 " height="300 ">
                                 <img class="users-photo__img " src="img/photo-users/photo-1-mobile.jpg " srcset="img/photo-users/photo-1-mobile@2x.jpg 2x " width="280 " height="180 ">
                             </picture>
-                            <cite class="users-photo__author ">Левон<time class="users-photo__time ">(5 часов назад)</time></cite>
-                            <blockquote class="users-photo__blockquote ">Вчера он на луну летал, сегодня в<br> руки к нам попал.</blockquote>
-                            <button class="users-photo__button "><svg class="users-photo__heart " width="13 " height="12" role="img " aria-label="иконка лайка">
+                            <div class="users-photo__item-wrap">
+                                <cite class="users-photo__author ">Левон<time class="users-photo__time ">(5 часов назад)</time></cite>
+                                <blockquote class="users-photo__blockquote ">Вчера он на луну летал, сегодня в<br> руки к нам попал.</blockquote>
+                                <button class="users-photo__button "><svg class="users-photo__heart " width="13 " height="12" role="img " aria-label="иконка лайка">
                           <use xlink:href="#heart "></use>
                         </svg><span class="users-photo__counter ">Нравится: 356</span>
                   </button>
-
+                            </div>
                         </li>
 
                         <li class="users-photo__item ">
@@ -240,13 +245,14 @@
                                 <source media="(min-width: 620px) " srcset="img/photo-users/photo-2-tablet.jpg, img/photo-users/photo-2-tablet@2x.jpg 2x " width="300 " height="300 ">
                                 <img src="img/photo-users/photo-2-mobile.jpg " srcset="img/photo-users/photo-2-mobile@2x.jpg 2x " width="280 " height="180 " alt="панорама ">
                             </picture>
-                            <cite class="users-photo__author ">Антон<time class="users-photo__time ">(12 часов назад)</time></cite>
-                            <blockquote class="users-photo__blockquote ">Соседи будут рады!</blockquote>
-                            <button class="users-photo__button "><svg class="users-photo__heart " width="13 " height="12" role="img " aria-label="иконка лайка">
+                            <div class="users-photo__item-wrap">
+                                <cite class="users-photo__author ">Антон<time class="users-photo__time ">(12 часов назад)</time></cite>
+                                <blockquote class="users-photo__blockquote ">Соседи будут рады!</blockquote>
+                                <button class="users-photo__button "><svg class="users-photo__heart " width="13 " height="12" role="img " aria-label="иконка лайка">
                           <use xlink:href="#heart "></use>
                         </svg><span class="users-photo__counter ">Нравится: 666</span>
                   </button>
-
+                            </div>
                         </li>
 
                         <li class="users-photo__item ">
@@ -259,13 +265,14 @@
                                 <source media="(min-width: 620px) " srcset="img/photo-users/photo-3-tablet.jpg, img/photo-users/photo-3-tablet@2x.jpg 2x " width="300 " height="300 ">
                                 <img src="img/photo-users/photo-3-mobile.jpg " srcset="img/photo-users/photo-3-mobile@2x.jpg 2x " width="280 " height="180 " alt="панорама ">
                             </picture>
-                            <cite class="users-photo__author ">Борис<time class="users-photo__time ">(20 часов назад)</time></cite>
-                            <blockquote class="users-photo__blockquote ">Здесь могла быть ваша цитата о<br> высоком и вечном.</blockquote>
-                            <button class="users-photo__button "><svg class="users-photo__heart " width="13 " height="12" role="img " aria-label="иконка лайка">
+                            <div class="users-photo__item-wrap">
+                                <cite class="users-photo__author ">Борис<time class="users-photo__time ">(20 часов назад)</time></cite>
+                                <blockquote class="users-photo__blockquote ">Здесь могла быть ваша цитата о<br> высоком и вечном.</blockquote>
+                                <button class="users-photo__button "><svg class="users-photo__heart " width="13 " height="12" role="img " aria-label="иконка лайка">
                           <use xlink:href="#heart "></use>
                         </svg><span class="users-photo__counter ">Нравится: 215</span>
                 </button>
-
+                            </div>
                         </li>
 
                         <li class="users-photo__item ">
@@ -278,13 +285,14 @@
                                 <source media="(min-width: 620px) " srcset="img/photo-users/photo-4-tablet.jpg, img/photo-users/photo-4-tablet@2x.jpg 2x " width="300 " height="300 ">
                                 <img src="img/photo-users/photo-4-mobile.jpg " srcset="img/photo-users/photo-4-mobile@2x.jpg 2x " width="280 " height="180 " alt="панорама ">
                             </picture>
-                            <cite class="users-photo__author ">Сергей<time class="users-photo__time ">(25 часов назад)</time></cite>
-                            <blockquote class="users-photo__blockquote ">Самая кубанская в мире!</blockquote>
-                            <button class="users-photo__button "><svg class="users-photo__heart " width="13 " height="12" role="img " aria-label="иконка лайка">
+                            <div class="users-photo__item-wrap">
+                                <cite class="users-photo__author ">Сергей<time class="users-photo__time ">(25 часов назад)</time></cite>
+                                <blockquote class="users-photo__blockquote ">Самая кубанская в мире!</blockquote>
+                                <button class="users-photo__button "><svg class="users-photo__heart " width="13 " height="12" role="img " aria-label="иконка лайка">
                           <use xlink:href="#heart "></use>
                         </svg><span class="users-photo__counter ">Нравится: 4</span>
               </button>
-
+                            </div>
                         </li>
 
                         <li class="users-photo__item ">
@@ -297,14 +305,15 @@
                                 <source media="(min-width: 620px) " srcset="img/photo-users/photo-5-tablet.jpg, img/photo-users/photo-5-tablet@2x.jpg 2x " width="300 " height="300 ">
                                 <img src="img/photo-users/photo-5-mobile.jpg " srcset="img/photo-users/photo-5-mobile@2x.jpg 2x " width="280 " height="180 " alt="панорама ">
                             </picture>
-                            <cite class="users-photo__author ">Максим<time class="users-photo__time ">(40 часов назад)</time></cite>
-                            <blockquote class="users-photo__blockquote ">
-                                Где снег-то?</blockquote>
-                            <button class="users-photo__button "><svg class="users-photo__heart " width="13 " height="12" role="img " aria-label="иконка лайка">
+                            <div class="users-photo__item-wrap">
+                                <cite class="users-photo__author ">Максим<time class="users-photo__time ">(40 часов назад)</time></cite>
+                                <blockquote class="users-photo__blockquote ">
+                                    Где снег-то?</blockquote>
+                                <button class="users-photo__button "><svg class="users-photo__heart " width="13 " height="12" role="img " aria-label="иконка лайка">
                           <use xlink:href="#heart "></use>
                         </svg><span class="users-photo__counter ">Нравится: 150</span>
             </button>
-
+                            </div>
                         </li>
 
                         <li class="users-photo__item ">
@@ -317,18 +326,19 @@
                                 <source media="(min-width: 620px) " srcset="img/photo-users/photo-6-tablet.jpg, img/photo-users/photo-6-tablet@2x.jpg 2x " width="300 " height="300 ">
                                 <img src="img/photo-users/photo-6-mobile.jpg " srcset="img/photo-users/photo-6-mobile@2x.jpg 2x " width="280 " height="180 " alt="панорама ">
                             </picture>
-                            <cite class="users-photo__author ">Надежда<time class="users-photo__time ">(45 часов назад)</time></cite>
-                            <blockquote class="users-photo__blockquote ">Всем GM и взаимные лайки!</blockquote>
-                            <button class="users-photo__button "><svg class="users-photo__heart " width="13 " height="12" role="img " aria-label="иконка лайка">
+                            <div class="users-photo__item-wrap">
+                                <cite class="users-photo__author ">Надежда<time class="users-photo__time ">(45 часов назад)</time></cite>
+                                <blockquote class="users-photo__blockquote ">Всем GM и взаимные лайки!</blockquote>
+                                <button class="users-photo__button "><svg class="users-photo__heart " width="13 " height="12" role="img " aria-label="иконка лайка">
                           <use xlink:href="#heart "></use>
                         </svg><span class="users-photo__counter ">Нравится: 2560</span>
           </button>
-
+                            </div>
                         </li>
 
 
                     </ul>
-                </div>
+                    </div>
             </section>
             <section class="users-filter ">
                 <h2 class="visually-hidden ">Фильтр фотографий</h2>
@@ -418,8 +428,8 @@
                 </div>
             </div>
         </footer>
-        <script src="../source/js/header-menu.js "></script>
-        <script src="../source/js/button.js "></script>
+        <script src="../build/js/script.min.js "></script>
+
 
 </body>
 
