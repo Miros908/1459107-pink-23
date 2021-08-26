@@ -93,6 +93,9 @@
   &:hover{
   fill:@red;
   }
+  @media(min-width:@desktop-width){
+   display:none;
+  }
 }
 
 .footer__logo{
@@ -108,6 +111,16 @@
 @media(min-width:@desktop-width){
   margin-top:29px;
   margin-left:-19px;
+
+}
+}
+
+.footer__logo-desktop{
+ display:none;
+ @media(min-width:@desktop-width){
+   display:block;
+
+
 }
 }
 
