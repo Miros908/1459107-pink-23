@@ -1,150 +1,161 @@
-.footer__developer{
+.footer__developer {
   font-family: @OpenSans;
   .font-style(400;14px;);
-  color:@dark-black;
-  margin-right:15px;
-  @media(min-width:@desktop-width){
-    .font-style(400;18px;);
-    margin-top:9px;
-    margin-right:13px;
+  color: @dark-black;
+  margin-right: 15px;
 
+  @media (min-width: @desktop-width) {
+    .font-style(400;18px;);
+    margin-top: 9px;
+    margin-right: 13px;
   }
 }
 
-.footer__wrapper{
+.footer__wrapper {
   width: 280px;
   margin: 0 auto;
-  padding:0 20px;
-  @media(min-width:@tablet-width){
-    width:580px;
-  }
-  @media(min-width:@desktop-width){
-    width:900px;
-    }
-}
+  padding: 0 20px;
 
-.footer__container{
-  @media(min-width:@tablet-width){
-  display:flex;
-  justify-content:space-between;
-  }
-}
-.footer__social-list{
-  display:flex;
-  list-style: none;
-  padding:0;
-  margin-left:50px;
-  margin-top:34px;
-  @media(min-width:@tablet-width){
-  margin-left:75px;
-  margin-top:32px;
-  }
-  @media(min-width:@desktop-width){
-  margin-top:65px;
-  margin-left:94px;
-}
-}
-
-.footer__twitter-icon{
-  margin-right:9px;
-  @media(min-width:@desktop-width){
-  margin-right:5px;
-}
-}
-.footer__facebook-icon{
-  margin-right:9px;
-  @media(min-width:@desktop-width){
-    margin-right:5px;
-  }
+  @media (min-width: @tablet-width) {
+    width: 580px;
   }
 
-.footer{
-  background-color:@white;
-  text-align:center;
-  padding-bottom:70px;
-  @media(min-width:@tablet-width){
-  padding-top:9px;
+  @media (min-width: @desktop-width) {
+    width: 900px;
   }
-
-
 }
 
-.footer__html-logo{
-  margin-top:5px;
+.footer__container {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
-.footer__wrap{
+.footer__social-list {
   display: flex;
-  margin-left:75px;
-  margin-top:29px;
-  @media(min-width:@tablet-width){
-  margin-top:34px;
-  margin-left:89px;
-  }
-  @media(min-width:@desktop-width){
-  margin-top:71px;
-  margin-right:-20px;
+  list-style: none;
+  padding: 0;
+  margin-left: 50px;
+  margin-top: 34px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 75px;
+    margin-top: 32px;
   }
 
-}
-
-.footer__logos{
-  fill:@black;
-  &:hover{
-  fill:@red;
-  }
-  @media(min-width:@desktop-width){
-   display:none;
+  @media (min-width: @desktop-width) {
+    margin-top: 65px;
+    margin-left: 94px;
   }
 }
 
-.footer__logo{
-  display:block;
-  padding-top:36px;
-  @media(min-width:@tablet-width){
-    margin-top:-4px;
-    margin-left:-19px;
+.footer__twitter-icon {
+  margin-right: 9px;
+
+  @media (min-width: @desktop-width) {
+    margin-right: 5px;
   }
-  &:focus{
+}
+
+.footer__facebook-icon {
+  margin-right: 9px;
+
+  @media (min-width: @desktop-width) {
+    margin-right: 5px;
+  }
+}
+
+.footer {
+  background-color: @white;
+  text-align: center;
+  padding-bottom: 70px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 9px;
+  }
+}
+
+.footer__html-logo {
+  margin-top: 5px;
+}
+
+.footer__wrap {
+  display: flex;
+  margin-left: 75px;
+  margin-top: 29px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 34px;
+    margin-left: 89px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 71px;
+    margin-right: -20px;
+  }
+}
+
+.footer__logos {
+  fill: @black;
+
+  &:hover {
+    fill: @red;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.footer__logo {
+  display: block;
+  padding-top: 36px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -4px;
+    margin-left: -19px;
+  }
+
+  &:focus {
     opacity: 30%;
-}
-@media(min-width:@desktop-width){
-  margin-top:29px;
-  margin-left:-19px;
+  }
 
-}
-}
-
-.footer__logo-desktop{
- display:none;
- @media(min-width:@desktop-width){
-   display:block;
-
-
-}
+  @media (min-width: @desktop-width) {
+    margin-top: 29px;
+    margin-left: -19px;
+  }
 }
 
-.footer__link svg{
-  stroke:@black-opacity;
+.footer__logo-desktop {
+  display: none;
 
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
 }
 
-.footer__link:hover svg{
-stroke:@black;
-opacity:100%;
-
-
-}
-.footer__link:focus svg{
-  opacity:30%;
-}
-.footer__logo-academy svg{
-  fill:@red;
-}
-.footer__logo-academy:hover svg{
-  fill:@black;
+.footer__link svg {
+  stroke: @black-opacity;
 }
 
-.footer__logo-academy:focus{
-  opacity:30%;
+.footer__link:hover svg {
+  stroke: @black;
+  opacity: 100%;
+}
+
+.footer__link:focus svg {
+  opacity: 30%;
+}
+
+.footer__logo-academy svg {
+  fill: @red;
+}
+
+.footer__logo-academy:hover svg {
+  fill: @black;
+}
+
+.footer__logo-academy:focus {
+  opacity: 30%;
 }

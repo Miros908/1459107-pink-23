@@ -9,7 +9,7 @@
     <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
     <link rel="applefavicon" href="img/favicon/applefavicon.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="../build/css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
 
 
 
@@ -155,7 +155,7 @@
 
 
             <nav class="main-nav">
-                <button class=" main-nav__toggle main-nav__toggle--close" type="button"><span class="visually-hidden">Открыть
+                <button class=" main-nav__toggle " type="button"><span class="visually-hidden">Открыть
                 меню</span></button>
                 <ul class="main-nav__list main-nav__list--open ">
 
@@ -192,14 +192,14 @@
                 </p>
 
                 <picture>
-                    <source type="image/webp" media="(min-width: 940px)" srcset="img/mobile/mobile-hand-desktop.webp 1x, img/mobile/mobile-hand-desktop@2x.webp 2x" width="568" height="641">
-                    <source type="image/webp" media="(min-width: 620px)" srcset="img/mobile/mobile-hand-tablet.webp 1x,  img/mobile/mobile-hand-tablet@2x.webp 2x" width="478" height="542">
-                    <source type="image/webp" srcset="img/mobile/mobile-hand.webp 1x,img/mobile/mobile-hand@2x.webp 2x" width=" 320 " height="286 ">
+                    <source type="image/webp" media="(min-width: 940px)" srcset="img/mobile/mobile-hand-desktop.webp 1x, img/mobile/mobile-hand-desktop@2x.webp 2x" style="width:568px; height:641px">
+                    <source type="image/webp" media="(min-width: 620px) " srcset="img/mobile/mobile-hand-tablet.webp 1x, img/mobile/mobile-hand-tablet@2x.webp 2x " style="width:478px; height:542px">
+                    <source type="image/webp" srcset="img/mobile/mobile-hand.webp 1x,img/mobile/mobile-hand@2x.webp 2x " style="width:320px; height:286px">
 
 
-                    <source media="(min-width: 940px) " srcset="img/mobile/mobile-hand-desktop.png, img/mobile/mobile-hand-desktop@2x.png 2x " width="568 " height="641 ">
-                    <source media="(min-width: 620px) " srcset="img/mobile/mobile-hand-tablet.png, img/mobile/mobile-hand-tablet@2x.png 2x " width="478 " height="542">
-                    <img class="app-info__hand " src="img/mobile/mobile-hand.png " srcset="img/mobile/mobile-hand@2x.png 2x " width="320 " height="286 ">
+                    <source media="(min-width: 940px) " srcset="img/mobile/mobile-hand-desktop.png, img/mobile/mobile-hand-desktop@2x.png 2x " style="width:568px; height:641px">
+                    <source media="(min-width: 620px) " srcset="img/mobile/mobile-hand-tablet.png, img/mobile/mobile-hand-tablet@2x.png 2x " style="width:478px; height:542px">
+                    <img class="app-info__hand " src="img/mobile/mobile-hand.png " srcset="img/mobile/mobile-hand@2x.png 2x " style="width:320px; height:286px" alt="Рука ">
                 </picture>
 
 
@@ -208,17 +208,17 @@
             приложение</a>
                 <ul class="app-info__social-list ">
                     <li class="app-info__item ">
-                        <a href="# "><svg class="app__info-apple-icon  " width="47 " height="56 " role="img " aria-label="иконка Apple ">
+                        <a href="# "><svg class="app__info-apple-icon " width="47 " height="56 " role="img" aria-label="иконка Apple ">
                           <use xlink:href="#apple-icon "></use>
                         </svg></a>
                     </li>
                     <li class="app-info__item ">
-                        <a href="# "><svg class="app__info-android-icon" width="43 " height="47 " role="img " aria-label="иконка Android ">
+                        <a href="# "><svg class="app__info-android-icon " width="43 " height="47 " role="img" aria-label="иконка Android ">
                           <use xlink:href="#android-icon "></use>
                         </svg></a>
                     </li>
                     <li class="app-info__item ">
-                        <a href="# "><svg class="app__info-microsoft-icon " width="44 " height="41 " role="img " aria-label="иконка Microsoft ">
+                        <a href="# "><svg class="app__info-microsoft-icon " width="44 " height="41 " role="img" aria-label="иконка Microsoft ">
                           <use xlink:href="#microsoft-icon "></use>
                         </svg></a>
                     </li>
@@ -237,17 +237,18 @@
             </h2>
             <div class="advantage__background ">
                 <div class="advantage__wrapper ">
-                    <p class="advantage__text advantage__text-1">
+                    <p class="advantage__text advantage__text-1 ">
                         Устали от серости мегаполиса?
-                        <p class="advantage__text advantage__text-2"> Нам есть, что вам предложить!</p>
+
                     </p>
+                    <p class="advantage__text advantage__text-2 "> Нам есть, что вам предложить!</p>
                 </div>
             </div>
             <div class=" advantage__linear ">
                 <div class="advantage__wrapper advantage__container ">
                     <ul class="advantage__list ">
                         <li class="advantage__item ">
-                            <h3 class="advantage__item-head advantage__item-up">
+                            <h3 class="advantage__item-head advantage__item-up ">
                                 Поднимает настроение
                             </h3>
                             <p class="advantage__item-text advantage__item-up-text ">
@@ -255,19 +256,19 @@
                             </p>
                         </li>
                         <li class="advantage__item ">
-                            <h3 class="advantage__item-head advantage__item-world  ">
+                            <h3 class="advantage__item-head advantage__item-world ">
                                 Меняет мир вокруг
                             </h3>
-                            <p class="advantage__item-text advantage__item-world-text  ">
-                                Сделайте снимок и&nbsp<br class="advantage__br-desktop"> украсьте его смайликом&nbsp<br class="advantage__br-tablet"><br class="advantage__br-desktop">или текстовой подписью, чтобы&nbsp<br class="advantage__br-tablet">                                усилить эффект
+                            <p class="advantage__item-text advantage__item-world-text ">
+                                Сделайте снимок и&nbsp; <br class="advantage__br-desktop "> украсьте его смайликом&nbsp; <br class="advantage__br-tablet "><br class="advantage__br-desktop ">или текстовой подписью, чтобы&nbsp; <br class="advantage__br-tablet ">                                усилить эффект
                             </p>
                         </li>
                         <li class="advantage__item ">
                             <h3 class="advantage__item-head advantage__item-friend ">
                                 Заводит новых друзей
                             </h3>
-                            <p class="advantage__item-text advantage__item-friend-text  ">
-                                Ставьте лайки, комментируйте,&nbsp<br class="advantage__br-mobile"> делитесь&nbsp<br class="advantage__br-desktop"><br class="advantage__br-tablet"> фотографиями с друзьями и&nbsp<br class="advantage__br-mobile">заводите
+                            <p class="advantage__item-text advantage__item-friend-text ">
+                                Ставьте лайки, комментируйте,&nbsp;<br class="advantage__br-mobile "> делитесь&nbsp;<br class="advantage__br-desktop "><br class="advantage__br-tablet "> фотографиями с друзьями и&nbsp;<br class="advantage__br-mobile ">заводите
                                 новых
                             </p>
                         </li>
@@ -281,14 +282,15 @@
             </div>
         </section>
         <section class="effect ">
+            <h2 class="visually-hidden ">Еффект</h2>
             <div class="effect__wrapper ">
-                <svg class="effect__timer-photo " width="238 " height="276 " role="img " aria-label="Часы ">
+                <svg class="effect__timer-photo " width="238 " height="276 " role="img" aria-label="Часы ">
                   <use xlink:href="#timer "></use>
                 </svg>
                 <div>
-                    <p class="effect__head ">Эффект&nbsp<br class="effect__br-tablet"> на 24 часа!</p>
-                    <p class="effect__slogan ">Британские ученые провели исследования<br class="effect__br-tablet"> и доказали,&nbsp<br class="effect__br-desktop"> что положительный эффект&nbsp<br class="effect__br-tablet"> от использования приложения длится&nbsp<br class="effect__br-tablet">целые
-                        сутки!
+                    <p class="effect__head ">Эффект&nbsp;<br class="effect__br-tablet "> на 24 часа!</p>
+                    <p class="effect__slogan ">Британские ученые провели исследования<br class="effect__br-tablet "> и доказали,&nbsp;<br class="effect__br-desktop "> что положительный эффект&nbsp;<br class="effect__br-tablet
+                        "> от использования приложения длится&nbsp;<br class="effect__br-tablet ">целые сутки!
                     </p>
                     <a class="effect__link " href="# ">Узнать больше об исследовании</a>
                 </div>
@@ -316,12 +318,12 @@
                         <button class="comments__button-2 comments__button-style "></button>
                     </li>
                     <li class="comments__button-item ">
-                        <button class="comments__button-3 comments__button-style"></button>
+                        <button class="comments__button-3 comments__button-style "></button>
                     </li>
 
                 </ul>
-                <button class="comments__button-next " type="button "></button>
-                <button class="comments__button-back " type="button "></button>
+                <button class="comments__button-next " type="button"></button>
+                <button class="comments__button-back " type="button"></button>
 
             </div>
 
@@ -331,7 +333,7 @@
             </h2>
             <div class="offer__wrapper ">
                 <div class="offer__table ">
-                    <div class="offer__table-column-head  ">
+                    <div class="offer__table-column-head ">
 
                         <div class="offer__table-head offer__head-1 offer__head--hidden ">
 
@@ -345,7 +347,7 @@
                             Стандарт<br><span>3,99
           USD</span>
                         </div>
-                        <div class="offer__table-head offer__head-3 offer__head--hidden">
+                        <div class="offer__table-head offer__head-3 offer__head--hidden ">
 
                             АНЛИМ<br><span>9,99
             USD</span>
@@ -354,7 +356,7 @@
                     </div>
 
                     <div class="offer__table-column-wrapper ">
-                        <div class="offer__table-column">
+                        <div class="offer__table-column ">
                             <div class="offer__table-row ">
 
                                 <p>Розовый фильтр</p>
@@ -375,7 +377,7 @@
 
                             </div>
                         </div>
-                        <div class="offer__table-column-2  ">
+                        <div class="offer__table-column-2 ">
                             <div class="offer__table-row ">
 
                                 <span class="offer-table__yes-tablet "></span>
@@ -466,14 +468,14 @@
           555-66-66</a>
                     </div>
                     <div>
-                        <p class="contacts__info-head  contacts-info__head-email ">
+                        <p class="contacts__info-head contacts-info__head-email ">
                             Пишите:
                         </p>
                         <a class="contacts__info " href="mailto:mail@htmlacademy.ru ">mail@htmlacademy.ru</a>
 
                     </div>
                     <div>
-                        <p class="contacts__info-head  contacts-info__head-road ">
+                        <p class="contacts__info-head contacts-info__head-road ">
                             Приезжайте в гости:
                         </p>
                         <a class="contacts__info ">ул.
@@ -489,7 +491,7 @@
                 <picture>
                     <source media="(min-width: 940px) " srcset="img/map/map-desktop.png, img/map/map-desktop@2x.png 2x ">
                     <source media="(min-width: 620px) " srcset="img/map/map-tablet.png, img/map/map-tablet@2x.png 2x ">
-                    <img src="img/map/map-mobile.png " srcset="img/map/map-mobile@2x.png " width="100% " heigth="200 " alt="Карта ">
+                    <img src="img/map/map-mobile.png " srcset="img/map/map-mobile@2x.png " style="width:100% ; height:200px" alt="Карта ">
 
                 </picture>
             </a>
@@ -497,21 +499,21 @@
     </main>
     <footer class="footer ">
         <div class="footer__wrapper footer__container ">
-            <a class="footer__logo" href="# "><svg class="footer__logos " width="145 " height="40 " role="img " aria-label="логотип приложения Pink" >
+            <a class="footer__logo " href="# "><svg class="footer__logos " width="145 " height="40 " role="img" aria-label="логотип приложения Pink " >
         <use xlink:href="#logo-footer "></use></svg>
-        <svg class="footer__logo-desktop" width="145 " height="40 " role="img " aria-label="логотип приложения Pink" >
-          <use xlink:href="#logo-footer-desktop"></use></svg></a>
+        <svg class="footer__logo-desktop " width="145 " height="40 " role="img" aria-label="логотип приложения Pink " >
+          <use xlink:href="#logo-footer-desktop "></use></svg></a>
             <ul class="footer__social-list ">
                 <li class="footer__item ">
-                    <a href="# " class="footer__link"><svg class="footer__twitter-icon " width="54 " height="54 " role="img " aria-label="Иконка Титтер ">
+                    <a href="# " class="footer__link "><svg class="footer__twitter-icon " width="54 " height="54 " role="img" aria-label="Иконка Титтер ">
                 <use xlink:href="#twitter-icon "></use></svg></a>
                 </li>
                 <li class="footer__item ">
-                    <a href="# " class="footer__link"><svg class="footer__facebook-icon " width="54 " height="54 " role="img " aria-label="Иконка Фейсбук ">
+                    <a href="# " class="footer__link "><svg class="footer__facebook-icon " width="54 " height="54 " role="img" aria-label="Иконка Фейсбук ">
               <use xlink:href="#facebook-icon "></use></svg></a>
                 </li>
                 <li class="footer__item ">
-                    <a href="# " class="footer__link"><svg class="footer__youtube-icon " width="54 " height="54 " role="img " aria-label="Иконка Ютуб ">
+                    <a href="# " class="footer__link "><svg class="footer__youtube-icon " width="54 " height="54 " role="img" aria-label="Иконка Ютуб ">
                 <use xlink:href="#youtube-icon "></use></svg></a>
                 </li>
 
@@ -520,13 +522,14 @@
                 <p class="footer__developer ">Разработано
                 </p>
                 <a class="footer__logo-academy " href="# ">
-                    <svg class="footer__html-logo " width="27 " height="34 " role="img " aria-label="Логотип академии ">
+                    <svg class="footer__html-logo " width="27 " height="34 " role="img" aria-label="Логотип академии ">
               <use xlink:href="#html-logo "></use></svg>
                 </a>
             </div>
         </div>
     </footer>
-    <script src="../build/js/script.min.js"></script>
+    <script src="js/buttons.min.js "></script>
+    <script src="js/main-nav__menu.min.js "></script>
 
 
 </body>
