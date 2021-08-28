@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Pink</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
     <link rel="applefavicon" href="img/favicon/applefavicon.png">
@@ -206,7 +207,7 @@
 
                     <source media="(min-width: 940px)" srcset="img/photo-users/panorama-desktop.jpg, img/photo-users/panorama-desktop@2x.jpg 2x">
                     <source media="(min-width: 620px)" srcset="img/photo-users/panorama-tablet.jpg, img/photo-users/panorama-tablet@2x.jpg 2x">
-                    <img class="users-photo__img" src="img/photo-users/panorama.jpg" srcset="img/photo-users/panorama@2x.jpg 2x" alt="панорама">
+                    <img class="users-photo__img-top" src="img/photo-users/panorama.jpg" srcset="img/photo-users/panorama@2x.jpg 2x" alt="панорама">
 
 
 
@@ -239,13 +240,13 @@
 
                         <li class="users-photo__item ">
                             <picture>
-                                <source type="image/webp" media="(min-width: 940px)" srcset="img/photo-users/photo-1-desktop.webp 1x, img/photo-users/photo-1-desktop@2x.webp 2x" style=" width:300px; height:400px">
-                                <source type="image/webp" media="(min-width: 620px) " srcset="img/photo-users/photo-1-tablet.webp 1x, img/photo-users/photo-1-tablet@2x.webp 2x " style="width:300px ; height:300px">
-                                <source type="image/webp" srcset="img/photo-users/photo-1-mobile.webp 1x,img/photo-users/photo-1-mobile@2x.webp 2x " style=" width:280px ; height:180px">
+                                <source type="image/webp" media="(min-width: 940px)" srcset="img/photo-users/photo-1-desktop.webp 1x, img/photo-users/photo-1-desktop@2x.webp 2x">
+                                <source type="image/webp" media="(min-width: 620px) " srcset="img/photo-users/photo-1-tablet.webp 1x, img/photo-users/photo-1-tablet@2x.webp 2x " >
+                                <source type="image/webp" srcset="img/photo-users/photo-1-mobile.webp 1x,img/photo-users/photo-1-mobile@2x.webp 2x ">
 
-                                <source media="(min-width: 940px) " srcset="img/photo-users/photo-1-desktop.jpg, img/photo-users/photo-1-desktop@2x.jpg 2x " style="width:300px ; height:400px ">
-                                <source media="(min-width: 620px) " srcset="img/photo-users/photo-1-tablet.jpg, img/photo-users/photo-1-tablet@2x.jpg 2x " style="width:300px ; height:300px ">
-                                <img class="users-photo__img " src="img/photo-users/photo-1-mobile.jpg " srcset="img/photo-users/photo-1-mobile@2x.jpg 2x " style=" width:280px ; height:180px " alt="авто">
+                                <source media="(min-width: 940px) " srcset="img/photo-users/photo-1-desktop.jpg, img/photo-users/photo-1-desktop@2x.jpg 2x ">
+                                <source media="(min-width: 620px) " srcset="img/photo-users/photo-1-tablet.jpg, img/photo-users/photo-1-tablet@2x.jpg 2x " >
+                                <img class="users-photo__img " src="img/photo-users/photo-1-mobile.jpg " srcset="img/photo-users/photo-1-mobile@2x.jpg 2x "  alt="авто">
                             </picture>
                             <div class="users-photo__item-wrap">
                                 <cite class="users-photo__author ">Левон<span class="users-photo__time ">(5 часов назад)</span></cite>
@@ -259,13 +260,13 @@
 
                         <li class="users-photo__item ">
                             <picture>
-                                <source type="image/webp" media="(min-width: 940px) " srcset="img/photo-users/photo-2-desktop.webp 1x, img/photo-users/photo-2-desktop@2x.webp 2x " style=" width:300px; height:400px">
-                                <source type="image/webp" media="(min-width: 620px) " srcset="img/photo-users/photo-2-tablet.webp 1x, img/photo-users/photo-2-tablet@2x.webp 2x " style="width:300px ; height:300px">
-                                <source type="image/webp" srcset="img/photo-users/photo-2-mobile.webp 1x,img/photo-users/photo-2-mobile@2x.webp 2x " style=" width:280px ; height:180px">
+                                <source type="image/webp" media="(min-width: 940px) " srcset="img/photo-users/photo-2-desktop.webp 1x, img/photo-users/photo-2-desktop@2x.webp 2x " >
+                                <source type="image/webp" media="(min-width: 620px) " srcset="img/photo-users/photo-2-tablet.webp 1x, img/photo-users/photo-2-tablet@2x.webp 2x " >
+                                <source type="image/webp" srcset="img/photo-users/photo-2-mobile.webp 1x,img/photo-users/photo-2-mobile@2x.webp 2x " >
 
-                                <source media="(min-width: 940px) " srcset="img/photo-users/photo-2-desktop.jpg, img/photo-users/photo-2-desktop@2x.jpg 2x " style="width:300px ; height:400px ">
-                                <source media="(min-width: 620px) " srcset="img/photo-users/photo-2-tablet.jpg, img/photo-users/photo-2-tablet@2x.jpg 2x " style="width:300px ; height:300px ">
-                                <img src="img/photo-users/photo-2-mobile.jpg " srcset="img/photo-users/photo-2-mobile@2x.jpg 2x " style=" width:280px ; height:180px " alt="барабаны">
+                                <source media="(min-width: 940px) " srcset="img/photo-users/photo-2-desktop.jpg, img/photo-users/photo-2-desktop@2x.jpg 2x " >
+                                <source media="(min-width: 620px) " srcset="img/photo-users/photo-2-tablet.jpg, img/photo-users/photo-2-tablet@2x.jpg 2x " >
+                                <img  class="users-photo__img " src="img/photo-users/photo-2-mobile.jpg " srcset="img/photo-users/photo-2-mobile@2x.jpg 2x "   alt="барабаны">
                             </picture>
                             <div class="users-photo__item-wrap">
                                 <cite class="users-photo__author ">Антон<span class="users-photo__time ">(12 часов назад)</span></cite>
@@ -279,13 +280,13 @@
 
                         <li class="users-photo__item ">
                             <picture>
-                                <source type="image/webp" media="(min-width: 940px)" srcset="img/photo-users/photo-3-desktop.webp 1x, img/photo-users/photo-3-desktop@2x.webp 2x" style=" width:300px; height:400px">
-                                <source type="image/webp" media="(min-width: 620px) " srcset="img/photo-users/photo-3-tablet.webp 1x, img/photo-users/photo-3-tablet@2x.webp 2x " style="width:300px ; height:300px">
-                                <source type="image/webp" srcset="img/photo-users/photo-3-mobile.webp 1x,img/photo-users/photo-3-mobile@2x.webp 2x " style=" width:280px ; height:180px">
+                                <source type="image/webp" media="(min-width: 940px)" srcset="img/photo-users/photo-3-desktop.webp 1x, img/photo-users/photo-3-desktop@2x.webp 2x">
+                                <source type="image/webp" media="(min-width: 620px) " srcset="img/photo-users/photo-3-tablet.webp 1x, img/photo-users/photo-3-tablet@2x.webp 2x ">
+                                <source type="image/webp" srcset="img/photo-users/photo-3-mobile.webp 1x,img/photo-users/photo-3-mobile@2x.webp 2x " >
 
-                                <source media="(min-width: 940px) " srcset="img/photo-users/photo-3-desktop.jpg, img/photo-users/photo-3-desktop@2x.jpg 2x " style="width:300px ; height:400px ">
-                                <source media="(min-width: 620px) " srcset="img/photo-users/photo-3-tablet.jpg, img/photo-users/photo-3-tablet@2x.jpg 2x " style="width:300px ; height:300px ">
-                                <img src="img/photo-users/photo-3-mobile.jpg " srcset="img/photo-users/photo-3-mobile@2x.jpg 2x " style=" width:280px ; height:180px " alt="небо">
+                                <source media="(min-width: 940px) " srcset="img/photo-users/photo-3-desktop.jpg, img/photo-users/photo-3-desktop@2x.jpg 2x " >
+                                <source media="(min-width: 620px) " srcset="img/photo-users/photo-3-tablet.jpg, img/photo-users/photo-3-tablet@2x.jpg 2x " >
+                                <img class="users-photo__img " src="img/photo-users/photo-3-mobile.jpg " srcset="img/photo-users/photo-3-mobile@2x.jpg 2x "  alt="небо">
                             </picture>
                             <div class="users-photo__item-wrap">
                                 <cite class="users-photo__author ">Борис<span class="users-photo__time ">(20 часов назад)</span></cite>
@@ -299,13 +300,13 @@
 
                         <li class="users-photo__item ">
                             <picture>
-                                <source type="image/webp" media="(min-width: 940px)" srcset="img/photo-users/photo-4-desktop.webp 1x, img/photo-users/photo-4-desktop@2x.webp 2x" style=" width:300px; height:400px">
-                                <source type="image/webp" media="(min-width: 620px) " srcset="img/photo-users/photo-4-tablet.webp 1x, img/photo-users/photo-4-tablet@2x.webp 2x " style="width:300px ; height:300px">
-                                <source type="image/webp" srcset="img/photo-users/photo-4-mobile.webp 1x,img/photo-users/photo-4-mobile@2x.webp 2x " style=" width:280px ; height:180px">
+                                <source type="image/webp" media="(min-width: 940px)" srcset="img/photo-users/photo-4-desktop.webp 1x, img/photo-users/photo-4-desktop@2x.webp 2x" >
+                                <source type="image/webp" media="(min-width: 620px) " srcset="img/photo-users/photo-4-tablet.webp 1x, img/photo-users/photo-4-tablet@2x.webp 2x ">
+                                <source type="image/webp" srcset="img/photo-users/photo-4-mobile.webp 1x,img/photo-users/photo-4-mobile@2x.webp 2x ">
 
-                                <source media="(min-width: 940px) " srcset="img/photo-users/photo-4-desktop.jpg, img/photo-users/photo-4-desktop@2x.jpg 2x " style="width:300px ; height:400px ">
-                                <source media="(min-width: 620px) " srcset="img/photo-users/photo-4-tablet.jpg, img/photo-users/photo-4-tablet@2x.jpg 2x " style="width:300px ; height:300px ">
-                                <img src="img/photo-users/photo-4-mobile.jpg " srcset="img/photo-users/photo-4-mobile@2x.jpg 2x " style=" width:280px ; height:180px " alt="Кубанская бахча">
+                                <source media="(min-width: 940px) " srcset="img/photo-users/photo-4-desktop.jpg, img/photo-users/photo-4-desktop@2x.jpg 2x " >
+                                <source media="(min-width: 620px) " srcset="img/photo-users/photo-4-tablet.jpg, img/photo-users/photo-4-tablet@2x.jpg 2x " >
+                                <img class="users-photo__img " src="img/photo-users/photo-4-mobile.jpg " srcset="img/photo-users/photo-4-mobile@2x.jpg 2x "   alt="Кубанская бахча">
                             </picture>
                             <div class="users-photo__item-wrap">
                                 <cite class="users-photo__author ">Сергей<span class="users-photo__time ">(25 часов назад)</span></cite>
@@ -319,13 +320,13 @@
 
                         <li class="users-photo__item ">
                             <picture>
-                                <source type="image/webp" media="(min-width: 940px)" srcset="img/photo-users/photo-5-desktop.webp 1x, img/photo-users/photo-5-desktop@2x.webp 2x" style=" width:300px; height:400px">
-                                <source type="image/webp" media="(min-width: 620px) " srcset="img/photo-users/photo-5-tablet.webp 1x, img/photo-users/photo-5-tablet@2x.webp 2x " style="width:300px ; height:300px">
-                                <source type="image/webp" srcset="img/photo-users/photo-5-mobile.webp 1x,img/photo-users/photo-5-mobile@2x.webp 2x " style=" width:280px ; height:180px">
+                                <source type="image/webp" media="(min-width: 940px)" srcset="img/photo-users/photo-5-desktop.webp 1x, img/photo-users/photo-5-desktop@2x.webp 2x" >
+                                <source type="image/webp" media="(min-width: 620px) " srcset="img/photo-users/photo-5-tablet.webp 1x, img/photo-users/photo-5-tablet@2x.webp 2x " >
+                                <source type="image/webp" srcset="img/photo-users/photo-5-mobile.webp 1x,img/photo-users/photo-5-mobile@2x.webp 2x " >
 
-                                <source media="(min-width: 940px) " srcset="img/photo-users/photo-5-desktop.jpg, img/photo-users/photo-5-desktop@2x.jpg 2x " style="width:300px ; height:400px ">
-                                <source media="(min-width: 620px) " srcset="img/photo-users/photo-5-tablet.jpg, img/photo-users/photo-5-tablet@2x.jpg 2x " style="width:300px ; height:300px ">
-                                <img src="img/photo-users/photo-5-mobile.jpg " srcset="img/photo-users/photo-5-mobile@2x.jpg 2x " style=" width:280px ; height:180px " alt="горы">
+                                <source media="(min-width: 940px) " srcset="img/photo-users/photo-5-desktop.jpg, img/photo-users/photo-5-desktop@2x.jpg 2x " >
+                                <source media="(min-width: 620px) " srcset="img/photo-users/photo-5-tablet.jpg, img/photo-users/photo-5-tablet@2x.jpg 2x " >
+                                <img class="users-photo__img " src="img/photo-users/photo-5-mobile.jpg " srcset="img/photo-users/photo-5-mobile@2x.jpg 2x "   alt="горы">
                             </picture>
                             <div class="users-photo__item-wrap">
                                 <cite class="users-photo__author ">Максим<span class="users-photo__time ">(40 часов назад)</span></cite>
@@ -340,13 +341,13 @@
 
                         <li class="users-photo__item ">
                             <picture>
-                                <source type="image/webp" media="(min-width: 940px)" srcset="img/photo-users/photo-6-desktop.webp 1x, img/photo-users/photo-6-desktop@2x.webp 2x" style=" width:300px; height:400px">
-                                <source type="image/webp" media="(min-width: 620px) " srcset="img/photo-users/photo-6-tablet.webp 1x, img/photo-users/photo-6-tablet@2x.webp 2x " style="width:300px ; height:300px">
-                                <source type="image/webp" srcset="img/photo-users/photo-6-mobile.webp 1x,img/photo-users/photo-6-mobile@2x.webp 2x " style=" width:280px ; height:180px">
+                                <source type="image/webp" media="(min-width: 940px)" srcset="img/photo-users/photo-6-desktop.webp 1x, img/photo-users/photo-6-desktop@2x.webp 2x" >
+                                <source type="image/webp" media="(min-width: 620px) " srcset="img/photo-users/photo-6-tablet.webp 1x, img/photo-users/photo-6-tablet@2x.webp 2x " >
+                                <source type="image/webp" srcset="img/photo-users/photo-6-mobile.webp 1x,img/photo-users/photo-6-mobile@2x.webp 2x " >
 
-                                <source media="(min-width: 940px) " srcset="img/photo-users/photo-6-desktop.jpg, img/photo-users/photo-6-desktop@2x.jpg 2x " style="width:300px ; height:400px ">
-                                <source media="(min-width: 620px) " srcset="img/photo-users/photo-6-tablet.jpg, img/photo-users/photo-6-tablet@2x.jpg 2x " style="width:300px ; height:300px ">
-                                <img src="img/photo-users/photo-6-mobile.jpg " srcset="img/photo-users/photo-6-mobile@2x.jpg 2x " style=" width:280px ; height:180px" alt="Закат">
+                                <source media="(min-width: 940px) " srcset="img/photo-users/photo-6-desktop.jpg, img/photo-users/photo-6-desktop@2x.jpg 2x " >
+                                <source media="(min-width: 620px) " srcset="img/photo-users/photo-6-tablet.jpg, img/photo-users/photo-6-tablet@2x.jpg 2x " >
+                                <img class="users-photo__img " src="img/photo-users/photo-6-mobile.jpg " srcset="img/photo-users/photo-6-mobile@2x.jpg 2x " alt="Закат">
                             </picture>
                             <div class=" users-photo__item-wrap ">
                                 <cite class="users-photo__author ">Надежда<span class="users-photo__time ">(45 часов назад)</span></cite>
@@ -373,11 +374,11 @@
                     <div class="users-filter__container ">
                         <picture>
 
-                            <source type="image/webp" media="(min-width: 620px) " srcset="img/photo-users/photo-7-tablet.webp 1x, img/photo-users/photo-7-tablet@2x.webp 2x " style=" width:300px; height:400px">
-                            <source type="image/webp" srcset="img/photo-users/photo-7-mobile.webp 1x,img/photo-users/photo-7-mobile@2x.webp 2x " style=" width:280px; height:374px">
+                            <source type="image/webp" media="(min-width: 620px) " srcset="img/photo-users/photo-7-tablet.webp 1x, img/photo-users/photo-7-tablet@2x.webp 2x ">
+                            <source type="image/webp" srcset="img/photo-users/photo-7-mobile.webp 1x,img/photo-users/photo-7-mobile@2x.webp 2x ">
 
-                            <source media="(min-width: 620px) " srcset="img/photo-users/photo-7-tablet.jpg, img/photo-users/photo-7-tablet@2x.jpg 2x " style="width:300px ; height:400px ">
-                            <img class="users-filter__winter " src="img/photo-users/photo-7-mobile.jpg " srcset="img/photo-users/photo-7-mobile@2x.jpg 2x " style="width:280px ; height:374px " alt="Зима ">
+                            <source media="(min-width: 620px) " srcset="img/photo-users/photo-7-tablet.jpg, img/photo-users/photo-7-tablet@2x.jpg 2x ">
+                            <img class="users-filter__winter " src="img/photo-users/photo-7-mobile.jpg " srcset="img/photo-users/photo-7-mobile@2x.jpg 2x "  alt="Зима ">
                         </picture>
                         <form class="users-filter__form " action="htmlacademy.echo " method="post">
                             <div class="users-filter__wrap ">
