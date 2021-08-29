@@ -4,6 +4,7 @@
   list-style: none;
   margin-left: -20px;
   display: none;
+  flex-wrap: wrap;
 
   @media (min-width: @tablet-width) {
     margin-left: -42px;
@@ -11,9 +12,10 @@
 
   @media (min-width: @desktop-width) {
     display: flex;
-    margin-left: 291px;
+    margin-left: 166px;
     margin-top: 22px;
     background-color: transparent;
+    width: 650px;
   }
 }
 
@@ -174,4 +176,8 @@
   position: absolute;
   margin-top: 1px;
   z-index: 100;
+
+  @media (min-width: @desktop-width) {
+    position: inherit;
+  }
 }
