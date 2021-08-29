@@ -1,13 +1,16 @@
-.app-info__wrapper{
-  width:280px;
-  margin:0 auto;
-  position:relative;
-  @media(min-width:@tablet-width){
-  width:620px;
+.app-info__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 580px;
   }
-  @media(min-width:@desktop-width){
-    width:967px;
-    }
+
+  @media (min-width: @desktop-width) {
+    width: 900px;
+  }
 }
 
 .app-info__download {
@@ -18,91 +21,162 @@
   border: 3px solid @white;
   border-radius: 29px;
   line-height: 18px;
-  font-size:18px;
-  width:280px;
-  display:block;
-  text-align:center;
-  padding:14px 0;
-  margin-top:326px;
+  font-size: 18px;
+  width: 273px;
+  display: block;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 16px;
+  margin-top: 343px;
 
-  @media(min-width:@tablet-width){
-    margin-top:39px;
-    margin-left:1px;
+  @media (min-width: @tablet-width) {
+    margin-top: 30px;
+    margin-left: -20px;
+    width: 295px;
+  }
+
+  &:hover {
+    color: @red;
+    background-color: @white;
+  }
+
+  &:focus {
+    color: @red-opacity;
+    background-color: @white;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 294px;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    margin-top: 37px;
+    margin-left: -19px;
+    font-size: 21px;
+    line-height: 18px;
   }
 }
+
+.app__info-android-icon {
+  margin-left: 32px;
+  margin-right: 4px;
+}
+
+.app__info-apple-icon {
+  margin-top: -1px;
+  margin-left: -35px;
+  margin-right: 3px;
+}
+
+.app__info-microsoft-icon {
+  margin-top: 7px;
+  margin-left: 31px;
+  margin-right: 1px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 2px;
+  }
+}
+
 
 .app-info__social-list {
   list-style: none;
   display: flex;
-  justify-content: space-around;
-  align-items:center;
-  padding:0;
-  margin:0;
-  margin-top:44px;
-  @media(min-width:@tablet-width){
+  align-items: center;
+  padding: 0;
+  margin: 33px 0 0 73px;
+
+  @media (min-width: @tablet-width) {
     justify-content: start;
-    margin-left:40px;
+    margin-left: 61px;
+    margin-top: 46px;
   }
-  .app-info__item{
-    @media(min-width:@tablet-width){
-    margin-right:35px;
-    }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 70px;
+    margin-left: 62px;
   }
 }
-
 
 
 .app-info__maintenance {
   color: @white;
   font-family: @OpenSans;
   .font-style(300;14px;);
-  text-align:center;
-  @media(min-width:@tablet-width){
-    width:304px;
+  text-align: center;
+  margin-top: 17px;
+  margin-bottom: 31px;
+  line-height: 24px;
 
-    margin-top:38px;
+  @media (min-width: @tablet-width) {
+    width: 304px;
+    margin-left: -21px;
+    margin-top: 29px;
     .font-style(300;18px;);
   }
 
-}
-
-.app-info__background{
-  background-color:@special-black;
-  @media(min-width:@tablet-width){
-  background-color: transparent;
-
+  @media (min-width: @desktop-width) {
+    margin-top: 46px;
+    margin-left: -22px;
+    margin-bottom: 124px;
   }
 }
 
-.app-info__slogan{
+.app-info__background {
+  background-color: @special-black;
+
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+  }
+}
+
+.app-info__slogan {
   font-family: @OpenSans;
   .font-style(300;24px;);
-    color:@white;
-    margin-bottom:233px;
-    text-align:center;
-    @media(min-width:@tablet-width){
+  color: @white;
+  margin-bottom: 233px;
+  margin-top: 26px;
+  text-align: center;
+  line-height: 120%;
 
-.font-style(300;40px;);
-line-height:48px;
-width:193px;
-margin:0;
-margin-top:102px;
-margin-left:42px;
-    }
+  @media (min-width: @tablet-width) {
+
+    .font-style(300;40px;);
+    line-height: 48px;
+    width: 193px;
+    margin: 0;
+    margin-top: 94px;
+    margin-left: 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 98px;
+    margin-left: -21px;
+    .font-style(300;50px;);
+    line-height: 68px;
+    width: 300px;
+  }
 }
 
 
-.app-info__hand{
- position:absolute;
- top:76px;
- left:-19px;
- z-index:-100;
- @media(min-width:@tablet-width){
-top:-102px;
- }
- @media(min-width:@desktop-width){
-  left:172px;
-   }
+.app-info__hand {
+  position: absolute;
+  top: 85px;
+  left: -1px;
+  z-index: -100;
+  width: 320px;
+  height: 286px;
 
+  @media (min-width: @tablet-width) {
+    top: -17px;
+    left: 143px;
+    width: 399px;
+    height: 453px;
+  }
 
+  @media (min-width: @desktop-width) {
+    left: 337px;
+    top: 1px;
+    width: 561px;
+    height: 635px;
+  }
 }

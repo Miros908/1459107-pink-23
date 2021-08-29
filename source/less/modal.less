@@ -1,0 +1,227 @@
+.modal__title {
+  color: @dark-black;
+  font-family: @OpenSans;
+  .font-style(700;18px;);
+  margin-top: 37px;
+
+  @media (min-width: @tablet-width) {
+    .font-style(700;30px;);
+    line-height: 40px;
+  }
+}
+
+
+.modal__br-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.modal__br-mobile {
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.modal__text {
+  color: @black;
+  font-family: @OpenSans;
+  .font-style(400;14px;);
+  line-height: 24px;
+  margin-top: 26px;
+  margin-left: -2px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    .font-style(400;18px;);
+    margin-top: -8px;
+    margin-left: 3px;
+  }
+}
+
+.modal__button {
+  background-color: @green;
+  border: 2px solid @green;
+  border-radius: 1px;
+  color: @white;
+  width: 278px;
+  height: 61px;
+  text-align: center;
+  font-family: @OpenSans;
+  .font-style(700;18px;);
+  margin-top: 28px;
+
+  @media (min-width: @tablet-width) {
+    width: 298px;
+    margin-top: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 52px;
+  }
+}
+
+.modal__button-sent {
+  background-color: @green;
+  border: 2px solid @green;
+  border-radius: 1px;
+  color: @white;
+  width: 278px;
+  height: 61px;
+  text-align: center;
+  font-family: @OpenSans;
+  .font-style(700;18px;);
+  margin-top: 28px;
+
+  @media (min-width: @tablet-width) {
+    width: 298px;
+    margin-top: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 52px;
+  }
+}
+
+.modal__error {
+  background-color: @white;
+  position: absolute;
+  top: 1166px;
+  width: 320px;
+  height: 289px;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    top: 913px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 459px;
+    height: 358px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 782px;
+    height: 371px;
+  }
+}
+
+.modal__background-button-error {
+  background-color: @white;
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: 460px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    background-color: @grey;
+    width: 780px;
+    height: 163px;
+    margin-top: 62px;
+  }
+}
+
+.modal__form-sent {
+  background-color: #ffffff;
+  position: absolute;
+  top: 1248px;
+  width: 320px;
+  height: 380px;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  text-align: center;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+
+  @media (min-width: @tablet-width) {
+    bottom: -1203px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 461px;
+    height: 456px;
+  }
+
+  @media (min-width: @desktop-width) {
+    bottom: -1136px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 780px;
+    height: 403px;
+  }
+
+  .modal__title {
+    @media (min-width: @tablet-width) {
+      margin-top: 67px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-top: 67px;
+    }
+  }
+
+  .modal__background-button {
+    background-color: @grey;
+    width: 320px;
+    height: 164px;
+    margin-top: 33px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 27px;
+      width: 465px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 781px;
+      margin-top: 38px;
+    }
+  }
+
+  .modal__button {
+    background-color: @green;
+    border: 2px solid @green;
+    border-radius: 1px;
+    color: @white;
+    width: 278px;
+    height: 61px;
+    text-align: center;
+    font-family: @OpenSans;
+    .font-style(700;18px;);
+    margin-top: 51px;
+
+    @media (min-width: @tablet-width) {
+      width: 298px;
+      margin-top: 52px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 459px;
+    }
+  }
+}
+
+.modal__br-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}

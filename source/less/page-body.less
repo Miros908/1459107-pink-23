@@ -1,40 +1,38 @@
 
 
-
-
-.page-body{
+.page-body {
   font-family: @OpenSans;
   .font-style(400;14px;);
-background-color: @black;
-background-image:url(../img/mobile/back-mobile-form.png);
-background-repeat:no-repeat;
-background-position:  top center;
-margin:0;
-padding:0;
-z-index:-1;
-
-@media (min-resolution: 2dppx) {
-  background-image: url("../img/mobile/back-mobile-form-2x.png");
-  background-size: 320px 462px;
-}
-
-
-@media(min-width:@tablet-width){
-background-image:url(../img/mobile/back-tablet-form.png) ;
-@media (min-resolution: 2dppx) {
-  background-image: url(../img/mobile/back-tablet-form-2x.png);
-  background-size: 660px 729px;
-}
-}
-@media(min-width:@desktop-width){
-  background-image:url(../img/mobile/back-desktop-form.png)  ;
+  background-color: @black;
+  background-image: url("../img/mobile/back-mobile-form.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+  background-size: 100% 462px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url(../img/mobile/back-desktop-form-2x.png);
-    background-size: 1200px 953px;
-  }
+    background-image: url("../img/mobile/back-mobile-form-2x.png");
+    background-size: 100% 462px;
   }
 
 
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/mobile/back-tablet-form.png");
+    background-size: 100% 729px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/mobile/back-tablet-form-2x.png");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/mobile/back-desktop-form.png");
+    background-size: 100% 853px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/mobile/back-desktop-form-2x.png");
+    }
+  }
 }
-
