@@ -16,7 +16,7 @@ const del = require("del");
 // Styles
 
 const styles = () => {
-    return gulp.src("source/less/style.less")
+    return gulp.src("source/less/blocks/style.less")
         .pipe(plumber())
         .pipe(sourcemap.init())
         .pipe(less())
